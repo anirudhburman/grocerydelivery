@@ -1,9 +1,18 @@
 package com.capgemini.go.model;
 
 import java.time.LocalDate;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -11,6 +20,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.ToString.Exclude;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,11 +32,26 @@ import lombok.ToString;
 public class OrderModel {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="order_seq")
+	@SequenceGenerator(name="order_seq",sequenceName="order_seq", allocationSize=1)
 	private Integer orderId;
-	private Integer userId;
-	private Integer addressId;
-	private Byte orderDispatchStatus;
-	private LocalDate orderInitiateTime;
-	private LocalDate orderDispatchTime;
+	
+	// HAS - A relationship
+	// A customer can have many orders. But one order can be ordered by only one customer.
+	@ManyToOne(cascade = CascadeType.ALL) //Owning side
+	@JoinColumn(name="cust_id")
+	private CustomerModel customer;
+	
+	// HAS - MANY relationship
+	// An order can have many products and one product can belong to many orders.
+	@ManyToMany(cascade = CascadeType.ALL) // Owning side
+	@JoinTable(name="go_product_orders",joinColumns= {@JoinColumn(name="orderId")}, inverseJoinColumns = {@JoinColumn(name="productId")})
+	@Exclude
+	private List<ProductModel> products;
+	
+	private Long totalQuantity;
+	private Double totalPrice;
+	private LocalDate orderDeliveryDate;
+	private LocalDate orderDispatchDate;
 
 }

@@ -1,7 +1,10 @@
 package com.capgemini.go.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -20,12 +23,13 @@ import lombok.ToString;
 public class AddressModel {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="add_seq")
+	@SequenceGenerator(name="add_seq",sequenceName="add_seq", allocationSize=1)
 	private Integer addressId;
-	private Integer retailerId;
 	private String buildingNo;
+	private String areaName;
 	private String city;
 	private String state;
-	private String field;
-	private Integer Zip;
+	private Integer zip;
 
 }

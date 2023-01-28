@@ -1,7 +1,15 @@
 package com.capgemini.go.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -20,8 +28,20 @@ import lombok.ToString;
 public class CartModel {
 	
 	@Id
-	private Integer userId;
-	private Integer productId;
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="cart_seq")
+	@SequenceGenerator(name="cart_seq",sequenceName="cart_seq", allocationSize=1)
+	private Integer cartId;
+	
+	// HAS - A relationship
+	// One cart can have only one Customer.
+	@OneToOne
+	@JoinColumn(name = "cart_id")
+	private CustomerModel customer;
+	
+	// HAS - A relationship
+	// One cart can have many products.
+	@OneToMany
+	private List<ProductModel> products;
 	private Integer quantity;
 
 }

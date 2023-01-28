@@ -1,7 +1,10 @@
 package com.capgemini.go.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -21,7 +24,9 @@ public class UserModel {
     
 	private String userName;
 	@Id
-	private String userId;
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="user_seq")
+	@SequenceGenerator(name="user_seq",sequenceName="user_seq", allocationSize=1)
+	private Integer userId;
 	private String userType;
 	private String userPassword;
 }
