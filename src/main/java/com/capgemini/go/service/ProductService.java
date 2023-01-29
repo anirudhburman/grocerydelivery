@@ -10,7 +10,7 @@ public interface ProductService {
 	
 	public ProductModel updateProduct(ProductModel product);
 	
-	public String deleteProduct(ProductModel product);
+	public String deleteProductById(Integer productId);
 	
 	public ProductModel searchByBrand(String brand);
 	

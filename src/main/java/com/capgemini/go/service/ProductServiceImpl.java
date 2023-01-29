@@ -27,8 +27,9 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public String deleteProduct(ProductModel product) {
-		return null;
+	public String deleteProductById(Integer productId) {
+		prodDao.deleteById(productId);
+		return "product deleted successfully";
 	}
 
 	@Override
