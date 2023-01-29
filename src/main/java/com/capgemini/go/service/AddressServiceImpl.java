@@ -20,12 +20,12 @@ public class AddressServiceImpl implements AddressService {
 
 	@Override
 	public AddressModel updateAddress(AddressModel address) {
-		return null;
+		return addrDao.save(address);
 	}
 
 	@Override
-	public AddressModel deleteAddress(AddressModel address) {
-		return null;
+	public String deleteAddressById(Integer addressId) {
+		return "Address deleted successfully";
 	}
 
 }

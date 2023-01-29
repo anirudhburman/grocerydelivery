@@ -8,5 +8,5 @@ public interface AddressService {
 	
 	public AddressModel updateAddress(AddressModel address);
 	
-	public AddressModel deleteAddress(AddressModel address);
+	public String deleteAddressById(Integer addressId);
 }
