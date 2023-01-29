@@ -31,6 +31,6 @@ public class ProductModel {
 	private String dimension;
 	private String brand;
 	private Integer quantity;
-	private Integer productCategory;
+	private String productCategory;
 	private String productName;
 }

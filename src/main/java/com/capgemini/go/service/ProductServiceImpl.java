@@ -28,43 +28,36 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public String deleteProduct(ProductModel product) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public ProductModel searchByBrand(String brand) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public ProductModel searchByProductName(String productName) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public ProductModel searchByColour(String colour) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public ProductModel searchByDimension(String dimension) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<ProductModel> filterByBrand(String brand) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<ProductModel> sortByPrice() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

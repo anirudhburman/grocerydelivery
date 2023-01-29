@@ -25,6 +25,7 @@ public class AddressServiceImpl implements AddressService {
 
 	@Override
 	public String deleteAddressById(Integer addressId) {
+		addrDao.deleteById(addressId);
 		return "Address deleted successfully";
 	}
 

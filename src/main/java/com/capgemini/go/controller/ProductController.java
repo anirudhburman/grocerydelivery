@@ -5,18 +5,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capgemini.go.model.UserModel;
-import com.capgemini.go.service.UserService;
+import com.capgemini.go.model.ProductModel;
+import com.capgemini.go.service.ProductService;
 
 @RestController
-public class UserController {
+public class ProductController {
 	
 	@Autowired
-	UserService userSer;
+	ProductService prodSer;
 	
-	//http://localhost:8080/adduser
-	@PostMapping("/adduser")
-	public UserModel addUser(@RequestBody UserModel user) {
-		return userSer.addUser(user);
+	//http://localhost:8080/addproduct
+	@PostMapping("/addproduct")
+	public ProductModel addProduct(@RequestBody ProductModel prod) {
+		return prodSer.addProduct(prod);
 	}
 }
