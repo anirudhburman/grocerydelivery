@@ -1,12 +1,9 @@
 package com.capgemini.go.model;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -15,7 +12,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import lombok.ToString.Exclude;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -33,8 +29,7 @@ public class ProductModel {
 	private Double price;
 	private String colour;
 	private String dimension;
-	private String specification;
-	private String manufacturer;
+	private String brand;
 	private Integer quantity;
 	private Integer productCategory;
 	private String productName;

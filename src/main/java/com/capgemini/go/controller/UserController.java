@@ -1,8 +1,7 @@
 package com.capgemini.go.controller;
 
-import org.springframework.stereotype.Controller;
-
-@Controller
+//@Controller
 public class UserController {
-
+	
+	
 }
