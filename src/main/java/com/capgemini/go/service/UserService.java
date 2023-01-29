@@ -1,5 +1,6 @@
 package com.capgemini.go.service;
 
-public class Service {
-
+public interface UserService {
+	
+	
 }

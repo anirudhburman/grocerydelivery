@@ -1,4 +1,4 @@
-package com.capgemini.go.dao;
+package com.capgemini.go.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
