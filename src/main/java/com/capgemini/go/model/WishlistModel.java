@@ -34,8 +34,8 @@ public class WishlistModel {
 	
 	// HAS - A relationship
 	// One wishlist can have only one customer.
-	@OneToOne
-	@JoinColumn(name = "wishlist_id")
+	@OneToOne(mappedBy = "wishlist")
+	@JoinColumn(name = "customer_id")
 	private CustomerModel customer;
 	
 	// HAS - A relationship
@@ -43,5 +43,14 @@ public class WishlistModel {
 	@OneToMany
 	private List<ProductModel> products;
 	private Integer quantity;
+	
+	public WishlistModel(Integer wishlistId, List<ProductModel> products, Integer quantity) {
+		super();
+		this.wishlistId = wishlistId;
+		this.products = products;
+		this.quantity = quantity;
+	}
+	
+	
 	
 }

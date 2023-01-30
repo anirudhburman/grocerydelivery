@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -29,4 +30,16 @@ public class UserModel {
 	private Integer userId;
 	private String userType;
 	private String userPassword;
+	@OneToOne(mappedBy = "user")
+	private CustomerModel customer;
+	
+	public UserModel(String userName, Integer userId, String userType, String userPassword) {
+		super();
+		this.userName = userName;
+		this.userId = userId;
+		this.userType = userType;
+		this.userPassword = userPassword;
+	}
+	
+	
 }

@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -31,5 +32,18 @@ public class AddressModel {
 	private String city;
 	private String state;
 	private Integer zip;
-
+	@OneToOne(mappedBy = "address")
+	private CustomerModel customer;
+	
+	public AddressModel(Integer addressId, String buildingNo, String areaName, String city, String state, Integer zip) {
+		super();
+		this.addressId = addressId;
+		this.buildingNo = buildingNo;
+		this.areaName = areaName;
+		this.city = city;
+		this.state = state;
+		this.zip = zip;
+	}
+	
+	
 }

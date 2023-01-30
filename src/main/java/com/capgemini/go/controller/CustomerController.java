@@ -17,6 +17,7 @@ public class CustomerController {
 	//http://localhost:8080/addcust
 	@PostMapping("/addcust")
 	public CustomerModel addCust(@RequestBody CustomerModel cust) {
-		return custSer.addCustomer(cust);
+		CustomerModel custer = custSer.addCustomer(cust);
+		return custer;
 	}
 }

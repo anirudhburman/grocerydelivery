@@ -34,8 +34,8 @@ public class CartModel {
 	
 	// HAS - A relationship
 	// One cart can have only one Customer.
-	@OneToOne
-	@JoinColumn(name = "cart_id")
+	@OneToOne(mappedBy = "cart")
+	@JoinColumn(name = "customer_id")
 	private CustomerModel customer;
 	
 	// HAS - A relationship
@@ -43,5 +43,12 @@ public class CartModel {
 	@OneToMany
 	private List<ProductModel> products;
 	private Integer quantity;
+	
+	public CartModel(Integer cartId, List<ProductModel> products, Integer quantity) {
+		super();
+		this.cartId = cartId;
+		this.products = products;
+		this.quantity = quantity;
+	}
 
 }
