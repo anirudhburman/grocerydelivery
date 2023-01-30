@@ -1,11 +1,14 @@
 package com.capgemini.go.model;
 
+import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -15,6 +18,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.ToString.Exclude;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -56,4 +60,22 @@ public class CustomerModel {
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="wishlist_id")
 	private WishlistModel wishlist;
+	
+	@OneToMany(mappedBy = "customer")
+	@Exclude
+	private List<OrderModel> orders;
+
+	public CustomerModel(Integer customerId, String customerName, String mobileNo, String email, AddressModel address,
+			UserModel user, CartModel cart, WishlistModel wishlist) {
+		super();
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.mobileNo = mobileNo;
+		this.email = email;
+		this.address = address;
+		this.user = user;
+		this.cart = cart;
+		this.wishlist = wishlist;
+	}
+	
 }

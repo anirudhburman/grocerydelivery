@@ -17,4 +17,14 @@ public class UserServiceImpl implements UserService {
 		return userDao.save(user);
 	}
 
+	@Override
+	public UserModel loginUser(UserModel user) {
+		return null;
+	}
+
+	@Override
+	public UserModel logoutUser(UserModel user) {
+		return null;
+	}
+
 }

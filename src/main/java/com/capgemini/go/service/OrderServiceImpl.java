@@ -1,5 +1,7 @@
 package com.capgemini.go.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,31 @@ public class OrderServiceImpl implements OrderService {
 	@Override
 	public OrderModel addOrder(OrderModel order) {
 		return orderDao.save(order);
+	}
+
+	@Override
+	public void cancelOrder() {
+		
+	}
+
+	@Override
+	public void cancelAProduct() {
+		
+	}
+
+	@Override
+	public OrderModel updateOrder(OrderModel order) {
+		return null;
+	}
+
+	@Override
+	public OrderModel getOrderById() {
+		return null;
+	}
+
+	@Override
+	public List<OrderModel> getAllOrders() {
+		return null;
 	}
 
 }

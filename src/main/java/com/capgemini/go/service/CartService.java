@@ -4,5 +4,6 @@ import com.capgemini.go.model.CartModel;
 
 public interface CartService {
 	
-	public CartModel addCart(CartModel cart);
+	public CartModel addAProductToCart(CartModel cart);
+	
 }

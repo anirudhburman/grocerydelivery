@@ -15,62 +15,62 @@ import com.capgemini.go.service.ProductService;
 
 @RestController
 public class ProductController {
-	
+
 	@Autowired
 	ProductService prodSer;
-	
-	//http://localhost:8080/addproduct
+
+	// http://localhost:8080/addproduct
 	@PostMapping("/addproduct")
 	public ProductModel addProduct(@RequestBody ProductModel prod) {
 		return prodSer.addProduct(prod);
 	}
-	
-	//http:localhost:8080/updateproduct
+
+	// http://localhost:8080/updateproduct
 	@PostMapping("/updateproduct")
 	public ProductModel updateproduct(@RequestBody ProductModel prod) {
 		return prodSer.updateProduct(prod);
 	}
-	
-	//http:localhost:8080/deleteproductbyid
-	@GetMapping("/deleteproductbyid")
-	public String deleteProductById(@PathVariable("id")Integer productId) {
+
+	// http://localhost:8080/deleteproductbyid
+	@GetMapping("/deleteproductbyid/{id}")
+	public String deleteProductById(@PathVariable("id") Integer productId) {
 		return prodSer.deleteProductById(productId);
 	}
-	
-	//http:localhost:8080/searchproductbybrand
+
+	// http://localhost:8080/searchproductbybrand
 	@GetMapping("/searchproductbybrand")
-	public ProductModel searchProductByBrand(@RequestParam("brand")String brand) {
+	public ProductModel searchProductByBrand(@RequestParam("brand") String brand) {
 		return prodSer.searchByBrand(brand);
 	}
-	
-	//http:localhost:8080/searchbyproductname
-		@GetMapping("/searchbyproductname")
-		public ProductModel searchByProductName(@RequestParam("productname")String productName) {
-			return prodSer.searchByProductName(productName);
-		}
-		
-	//http:localhost:8080/searchbycolour
-		@GetMapping("/searchbycolour")
-		public ProductModel searchByColour(@RequestParam("colour")String colour) {
-			return prodSer.searchByColour(colour);
-		}
-		
-	//http:localhost:8080/searchbydimension
-		@GetMapping("/searchbydimension")
-		public ProductModel searchByDimension(@RequestParam("dimension")String dimension) {
-			return prodSer.searchByDimension(dimension);
-		}
-		
-	//http:localhost:8080/filterbybrand
-		@GetMapping("/filterbybrand")
-		public List<ProductModel> filterByBrand(String brand) {
-			return prodSer.filterByBrand(brand);
-		}
-		
-	//http:localhost:8080/sortbyprice
-		@GetMapping("/sortbyprice")
-		public List<ProductModel> sortByPrice() {
+
+	// http://localhost:8080/searchbyproductname
+	@GetMapping("/searchbyproductname")
+	public ProductModel searchByProductName(@RequestParam("productname") String productName) {
+		return prodSer.searchByProductName(productName);
+	}
+
+	// http://localhost:8080/searchbycolour
+	@GetMapping("/searchbycolour")
+	public ProductModel searchByColour(@RequestParam("colour") String colour) {
+		return prodSer.searchByColour(colour);
+	}
+
+	// http://localhost:8080/searchbydimension
+	@GetMapping("/searchbydimension")
+	public ProductModel searchByDimension(@RequestParam("dimension") String dimension) {
+		return prodSer.searchByDimension(dimension);
+	}
+
+	// http://localhost:8080/filterbybrand
+	@GetMapping("/filterbybrand")
+	public List<ProductModel> filterByBrand(@RequestParam("dimension") String brand) {
+		return prodSer.filterByBrand(brand);
+	}
+
+	// http://localhost:8080/sortbyprice
+	@GetMapping("/sortbyprice")
+	public List<ProductModel> sortByPrice() {
 		return prodSer.sortByPrice();
-		}
-		
+	}
+
 }

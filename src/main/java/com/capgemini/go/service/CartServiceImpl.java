@@ -11,10 +11,10 @@ public class CartServiceImpl implements CartService {
 	
 	@Autowired
 	CartDao cartDao;
-	
+
 	@Override
-	public CartModel addCart(CartModel cart) {
-		return cartDao.save(cart);
+	public CartModel addAProductToCart(CartModel cart) {
+		return null;
 	}
 
 }

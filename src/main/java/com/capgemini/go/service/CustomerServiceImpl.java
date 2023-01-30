@@ -1,5 +1,7 @@
 package com.capgemini.go.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,31 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public CustomerModel addCustomer(CustomerModel customer) {
 		return custDao.save(customer);
+	}
+
+	@Override
+	public CustomerModel getCustomerById(Integer custId) {
+		return null;
+	}
+
+	@Override
+	public List<CustomerModel> getAllCustomers() {
+		return null;
+	}
+
+	@Override
+	public CustomerModel updateCustomer(CustomerModel cust) {
+		return null;
+	}
+
+	@Override
+	public void deleteCustomer(CustomerModel cust) {
+		
+	}
+
+	@Override
+	public void deleteCustomerById(Integer custId) {
+		
 	}
 
 }

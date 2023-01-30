@@ -9,4 +9,6 @@ public interface WishlistService {
 	
 	public WishlistModel addProducts(List<ProductModel> product);
 	
+	public WishlistModel viewWishlist();
+	
 }
