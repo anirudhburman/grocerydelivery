@@ -17,7 +17,7 @@ public class CartController {
 	//http://localhost:8080/viewcart/{id}
 	@GetMapping("/viewcart/{id}")
 	public CartModel viewCart(@PathVariable("id") Integer id) {
-		return cartSer.viewCart(id);
+		return cartSer.viewCartById(id);
 	}
 	
 }

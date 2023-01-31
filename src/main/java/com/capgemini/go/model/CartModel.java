@@ -39,6 +39,7 @@ public class CartModel {
 	// One cart can have only one Customer.
 	@OneToOne(mappedBy = "cart")
 	@JoinColumn(name = "customer_id")
+	@JsonIgnore
 	private CustomerModel customer;
 	
 	// HAS - A relationship

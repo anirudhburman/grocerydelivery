@@ -39,12 +39,12 @@ public class WishlistModel {
 	// One wishlist can have only one customer.
 	@OneToOne(mappedBy = "wishlist")
 	@JoinColumn(name = "customer_id")
+	@JsonIgnore
 	private CustomerModel customer;
 	
 	// HAS - A relationship
 	// One wishlist can have many products.
 	@OneToMany(cascade = CascadeType.ALL)
-	@JsonIgnore
 	private List<ProductModel> products;
 	private Integer quantity;
 	

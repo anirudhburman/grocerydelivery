@@ -21,4 +21,8 @@ public interface ProductDao extends CrudRepository<ProductModel, Integer>{
 	public List<ProductModel> findAllSortedByPrice();
 	
 	public List<ProductModel> findAllByBrand(String brand);
+	
+	public List<ProductModel> findAllByColour(String colour);
+	
+	public List<ProductModel> findAllByDimension(String dimension);
 }

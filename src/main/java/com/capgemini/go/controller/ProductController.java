@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.capgemini.go.exception.product.ProductAlreadyExistsException;
+import com.capgemini.go.exception.product.ProductNotFoundException;
 import com.capgemini.go.model.ProductModel;
 import com.capgemini.go.service.ProductService;
 
@@ -21,37 +23,37 @@ public class ProductController {
 
 	// http://localhost:8080/addproduct
 	@PostMapping("/addproduct")
-	public ProductModel addProduct(@RequestBody ProductModel prod) {
+	public ProductModel addProduct(@RequestBody ProductModel prod) throws ProductAlreadyExistsException {
 		return prodSer.addProduct(prod);
 	}
 
 	// http://localhost:8080/updateproduct
 	@PostMapping("/updateproduct")
-	public ProductModel updateproduct(@RequestBody ProductModel prod) {
+	public ProductModel updateproduct(@RequestBody ProductModel prod) throws ProductNotFoundException {
 		return prodSer.updateProduct(prod);
 	}
 
 	// http://localhost:8080/deleteproductbyid
 	@GetMapping("/deleteproductbyid/{id}")
-	public String deleteProductById(@PathVariable("id") Integer productId) {
+	public String deleteProductById(@PathVariable("id") Integer productId) throws ProductNotFoundException {
 		return prodSer.deleteProductById(productId);
 	}
 
 	// http://localhost:8080/searchbyproductname
 	@GetMapping("/searchbyproductname")
-	public ProductModel searchByProductName(@RequestParam("productname") String productName) {
+	public ProductModel searchByProductName(@RequestParam("productname") String productName) throws ProductNotFoundException {
 		return prodSer.searchByProductName(productName);
 	}
 
 	// http://localhost:8080/searchbycolour
 	@GetMapping("/searchbycolour")
-	public ProductModel searchByColour(@RequestParam("colour") String colour) {
+	public List<ProductModel> searchByColour(@RequestParam("colour") String colour) {
 		return prodSer.searchByColour(colour);
 	}
 
 	// http://localhost:8080/searchbydimension
 	@GetMapping("/searchbydimension")
-	public ProductModel searchByDimension(@RequestParam("dimension") String dimension) {
+	public List<ProductModel> searchByDimension(@RequestParam("dimension") String dimension) {
 		return prodSer.searchByDimension(dimension);
 	}
 

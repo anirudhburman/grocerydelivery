@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.capgemini.go.exception.product.ProductAlreadyExistsException;
+import com.capgemini.go.exception.product.ProductNotFoundException;
 import com.capgemini.go.model.ProductModel;
 import com.capgemini.go.repositories.ProductDao;
 
@@ -15,41 +17,52 @@ public class ProductServiceImpl implements ProductService {
 	ProductDao prodDao;
 
 	@Override
-	public ProductModel addProduct(ProductModel product) {
-		
+	public ProductModel addProduct(ProductModel product) throws ProductAlreadyExistsException {
+		if(prodDao.findByProductName(product.getProductName()) != null) {
+			throw new ProductAlreadyExistsException();
+		}
 		return prodDao.save(product);
 	}
 
 	@Override
-	public ProductModel updateProduct(ProductModel product) {
-		
-		return prodDao.save(product);
+	public ProductModel updateProduct(ProductModel product) throws ProductNotFoundException {
+		if(prodDao.existsById(product.getProductId())) {
+			return prodDao.save(product);
+		}
+		throw new ProductNotFoundException();
 	}
 
 	@Override
-	public String deleteProductById(Integer productId) {
-		prodDao.deleteById(productId);
-		return "product deleted successfully";
+	public String deleteProductById(Integer productId) throws ProductNotFoundException {
+		if(prodDao.existsById(productId)) {
+			prodDao.deleteById(productId);
+			return "product deleted successfully";
+		}
+		throw new ProductNotFoundException();
 	}
 
 	@Override
-	public ProductModel searchByProductName(String productName) {
-		return prodDao.findByProductName(productName);
+	public ProductModel searchByProductName(String productName) throws ProductNotFoundException {
+		ProductModel prod = prodDao.findByProductName(productName);
+		if(prod != null) {
+			return prod;
+		}
+		throw new ProductNotFoundException();
 	}
 
 	@Override
-	public ProductModel searchByColour(String colour) {
-		return prodDao.findByColour(colour);
+	public List<ProductModel> searchByColour(String colour) {
+		return prodDao.findAllByColour(colour);
 	}
 
 	@Override
-	public ProductModel searchByDimension(String dimension) {
-		return prodDao.findByDimension(dimension);
+	public List<ProductModel> searchByDimension(String dimension) {
+		return prodDao.findAllByDimension(dimension);
 	}
 
 	@Override
 	public List<ProductModel> filterByBrand(String brand) {
-		return (List<ProductModel>) prodDao.findAllByBrand(brand);
+		return prodDao.findAllByBrand(brand);
 	}
 
 	@Override

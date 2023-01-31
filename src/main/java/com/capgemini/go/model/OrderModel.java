@@ -15,8 +15,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -42,7 +40,6 @@ public class OrderModel {
 	// A customer can have many orders. But one order can be ordered by only one customer.
 	@ManyToOne(cascade = CascadeType.ALL) //Owning side
 	@JoinColumn(name="cust_id")
-	@JsonIgnore
 	private CustomerModel customer;
 	
 	// HAS - MANY relationship

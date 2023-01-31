@@ -48,5 +48,4 @@ public class AddressModel {
 		this.zip = zip;
 	}
 	
-	
 }

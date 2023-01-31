@@ -5,7 +5,13 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.capgemini.go.exception.customer.CustomerNotFoundException;
+import com.capgemini.go.exception.customer.EmptyCartException;
+import com.capgemini.go.exception.customer.EmptyWishListException;
+import com.capgemini.go.model.CartModel;
 import com.capgemini.go.model.CustomerModel;
+import com.capgemini.go.model.OrderModel;
+import com.capgemini.go.model.WishlistModel;
 import com.capgemini.go.repositories.CustomerDao;
 
 @Service
@@ -15,13 +21,16 @@ public class CustomerServiceImpl implements CustomerService {
 	CustomerDao custDao;
 	
 	@Override
-	public CustomerModel addCustomer(CustomerModel customer) {
+	public CustomerModel addCustomer(CustomerModel customer) /*throws CustomerAlreadyExistsException*/ {
 		return custDao.save(customer);
 	}
 
 	@Override
-	public CustomerModel getCustomerById(Integer custId) {
-		return custDao.findById(custId).get();
+	public CustomerModel getCustomerById(Integer custId) throws CustomerNotFoundException {
+		if(custDao.existsById(custId)) {
+			return custDao.findById(custId).get();
+		}
+		throw new CustomerNotFoundException();
 	}
 
 	@Override
@@ -30,24 +39,62 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 
 	@Override
-	public CustomerModel updateCustomer(CustomerModel cust) {
+	public CustomerModel updateCustomer(CustomerModel cust) throws CustomerNotFoundException {
 		if(custDao.existsById(cust.getCustomerId())) {
 			custDao.save(cust);
 			return cust;
 		}
-		return null;
+		throw new CustomerNotFoundException();
 	}
 
 	@Override
-	public String deleteCustomer(CustomerModel cust) {
-		custDao.delete(cust);
-		return "Customer Deleted";
+	public String deleteCustomer(CustomerModel cust) throws CustomerNotFoundException {
+		if(custDao.existsById(cust.getCustomerId())) {
+			custDao.delete(cust);
+			return "Customer Deleted";
+		}
+		throw new CustomerNotFoundException();
 	}
 
 	@Override
-	public String deleteCustomerById(Integer custId) {
-		custDao.deleteById(custId);
-		return "Deleted Customer by ID";
+	public String deleteCustomerById(Integer custId) throws CustomerNotFoundException {
+		if(custDao.existsById(custId)) {
+			custDao.deleteById(custId);
+			return "Deleted Customer by ID";
+		}
+		throw new CustomerNotFoundException();
+	}
+
+	@Override
+	public List<OrderModel> getOrdersByCustomerId(Integer custId) throws CustomerNotFoundException {
+		if(!custDao.existsById(custId)) {
+			throw new CustomerNotFoundException();
+		}
+		return custDao.findById(custId).get().getOrders();
+	}
+
+	@Override
+	public CartModel getCartByCustId(Integer custId) throws EmptyCartException, CustomerNotFoundException {
+		if(!custDao.existsById(custId)) {
+			throw new CustomerNotFoundException();
+		}
+		CartModel cart = custDao.findById(custId).get().getCart();
+		if(cart.getProducts().isEmpty()) {
+			throw new EmptyCartException();
+		}
+		return cart;
+	}
+
+	@Override
+	public WishlistModel getWishListByCustId(Integer id) throws EmptyWishListException, CustomerNotFoundException {
+		if(!custDao.existsById(id)) {
+			throw new CustomerNotFoundException();
+		}
+		WishlistModel wishlist = custDao.findById(id).get().getWishlist();
+		if(wishlist.getProducts().isEmpty()) {
+			throw new EmptyWishListException();
+		}
+		return wishlist;
 	}
 
 }

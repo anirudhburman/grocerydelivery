@@ -43,28 +43,24 @@ public class CustomerModel {
 	// One customer can have only one Address.
 	@OneToOne(cascade=CascadeType.ALL) 
 	@JoinColumn(name="address_id")
-	@JsonIgnore
 	private AddressModel address;
 	
 	//IS - A relationship
 	// Customer is a sub-class of User.
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="user_Id")
-	@JsonIgnore
 	private UserModel user;
 	
 	// HAS - A relationship
 	// Customer has one Cart
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="cart_id")
-	@JsonIgnore
 	private CartModel cart;
 	
 	// HAS - A relationship
 	// Customer has one wishlist
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="wishlist_id")
-	@JsonIgnore
 	private WishlistModel wishlist;
 	
 	@OneToMany(mappedBy = "customer")

@@ -6,6 +6,6 @@ public interface CartService {
 	
 //	public CartModel addAProductToCart(CartModel cart);
 	
-	public CartModel viewCart(Integer id);
+	public CartModel viewCartById(Integer id);
 	
 }
