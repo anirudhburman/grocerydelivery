@@ -14,8 +14,8 @@ public interface CustomerService {
 	
 	public CustomerModel updateCustomer(CustomerModel cust);
 	
-	public void deleteCustomer(CustomerModel cust);
+	public String deleteCustomer(CustomerModel cust);
 	
-	public void deleteCustomerById(Integer custId);
+	public String deleteCustomerById(Integer custId);
 	
 }

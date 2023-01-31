@@ -34,32 +34,32 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public ProductModel searchByBrand(String brand) {
-		return null;
+		return prodDao.findByBrand(brand);
 	}
 
 	@Override
 	public ProductModel searchByProductName(String productName) {
-		return null;
+		return prodDao.findByProductName(productName);
 	}
 
 	@Override
 	public ProductModel searchByColour(String colour) {
-		return null;
+		return prodDao.findByColour(colour);
 	}
 
 	@Override
 	public ProductModel searchByDimension(String dimension) {
-		return null;
+		return prodDao.findByDimension(dimension);
 	}
 
 	@Override
 	public List<ProductModel> filterByBrand(String brand) {
-		return null;
+		return (List<ProductModel>) prodDao.findAllByBrand(brand);
 	}
 
 	@Override
 	public List<ProductModel> sortByPrice() {
-		return null;
+		return prodDao.findAllSortedByPrice();
 	}
 
 }

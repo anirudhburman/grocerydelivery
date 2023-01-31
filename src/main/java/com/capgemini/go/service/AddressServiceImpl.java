@@ -14,7 +14,6 @@ public class AddressServiceImpl implements AddressService {
 
 	@Override
 	public AddressModel addAddress(AddressModel address) {
-		
 		return addrDao.save(address);
 	}
 

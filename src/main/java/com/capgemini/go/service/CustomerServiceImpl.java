@@ -21,27 +21,33 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public CustomerModel getCustomerById(Integer custId) {
-		return null;
+		return custDao.findById(custId).get();
 	}
 
 	@Override
 	public List<CustomerModel> getAllCustomers() {
-		return null;
+		return (List<CustomerModel>) custDao.findAll();
 	}
 
 	@Override
 	public CustomerModel updateCustomer(CustomerModel cust) {
+		if(custDao.existsById(cust.getCustomerId())) {
+			custDao.save(cust);
+			return cust;
+		}
 		return null;
 	}
 
 	@Override
-	public void deleteCustomer(CustomerModel cust) {
-		
+	public String deleteCustomer(CustomerModel cust) {
+		custDao.delete(cust);
+		return "Customer Deleted";
 	}
 
 	@Override
-	public void deleteCustomerById(Integer custId) {
-		
+	public String deleteCustomerById(Integer custId) {
+		custDao.deleteById(custId);
+		return "Deleted Customer by ID";
 	}
 
 }

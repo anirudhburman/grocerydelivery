@@ -13,8 +13,8 @@ public class CartServiceImpl implements CartService {
 	CartDao cartDao;
 
 	@Override
-	public CartModel addAProductToCart(CartModel cart) {
-		return null;
+	public CartModel viewCart(Integer id) {
+		return cartDao.findById(id).get();
 	}
 
 }

@@ -19,4 +19,16 @@ public class UserController {
 	public UserModel addUser(@RequestBody UserModel user) {
 		return userSer.addUser(user);
 	}
+	
+	//http://localhost:8080/loginuser
+	@PostMapping("/loginuser")
+	public UserModel loginUser(@RequestBody UserModel user) {
+		return userSer.loginUser(user);
+	}
+	
+	//http://localhost:8080/logoutuser
+	@PostMapping("/logoutuser")
+	public UserModel logoutUser(@RequestBody UserModel user) {
+		return userSer.logoutUser(user);
+	}
 }

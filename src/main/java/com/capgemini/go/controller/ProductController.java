@@ -63,7 +63,7 @@ public class ProductController {
 
 	// http://localhost:8080/filterbybrand
 	@GetMapping("/filterbybrand")
-	public List<ProductModel> filterByBrand(@RequestParam("dimension") String brand) {
+	public List<ProductModel> filterByBrand(@RequestParam("brand") String brand) {
 		return prodSer.filterByBrand(brand);
 	}
 
