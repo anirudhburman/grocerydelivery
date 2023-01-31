@@ -13,6 +13,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -42,6 +44,7 @@ public class WishlistModel {
 	// HAS - A relationship
 	// One wishlist can have many products.
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<ProductModel> products;
 	private Integer quantity;
 	

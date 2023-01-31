@@ -33,11 +33,6 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public ProductModel searchByBrand(String brand) {
-		return prodDao.findByBrand(brand);
-	}
-
-	@Override
 	public ProductModel searchByProductName(String productName) {
 		return prodDao.findByProductName(productName);
 	}
@@ -60,6 +55,11 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<ProductModel> sortByPrice() {
 		return prodDao.findAllSortedByPrice();
+	}
+
+	@Override
+	public List<ProductModel> getAllProducts() {
+		return (List<ProductModel>) prodDao.findAll();
 	}
 
 }

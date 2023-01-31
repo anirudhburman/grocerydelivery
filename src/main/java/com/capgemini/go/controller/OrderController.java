@@ -37,6 +37,7 @@ public class OrderController {
 		return orderSer.cancelOrderById(id);
 	}
 	
+	// NOT WORKING. TRY SENDING PRODUCT ID INSTEAD OF THE WHOLE OBJECT
 	// http://localhost:8080/cancelproduct/{id}
 	@PostMapping("/cancelproduct/{id}")
 	public String cancelAProduct(@PathVariable("id") Integer orderId, @RequestBody ProductModel product) {

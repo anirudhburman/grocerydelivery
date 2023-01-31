@@ -8,6 +8,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,6 +33,7 @@ public class UserModel {
 	private String userType;
 	private String userPassword;
 	@OneToOne(mappedBy = "user")
+	@JsonIgnore
 	private CustomerModel customer;
 	
 	public UserModel(String userName, Integer userId, String userType, String userPassword) {

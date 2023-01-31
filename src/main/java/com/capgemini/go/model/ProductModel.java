@@ -11,6 +11,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -40,11 +42,14 @@ public class ProductModel {
 	private String productName;
 	@ManyToMany(mappedBy = "products")
 	@Exclude
+	@JsonIgnore
 	private List<OrderModel> orders;
 	@ManyToOne
 	@Exclude
+	@JsonIgnore
 	private WishlistModel wishlist;
 	@ManyToOne
 	@Exclude
+	@JsonIgnore
 	private CartModel cart;
 }

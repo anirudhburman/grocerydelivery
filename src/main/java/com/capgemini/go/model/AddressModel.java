@@ -8,6 +8,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,6 +35,7 @@ public class AddressModel {
 	private String state;
 	private Integer zip;
 	@OneToOne(mappedBy = "address")
+	@JsonIgnore
 	private CustomerModel customer;
 	
 	public AddressModel(Integer addressId, String buildingNo, String areaName, String city, String state, Integer zip) {

@@ -37,12 +37,6 @@ public class ProductController {
 		return prodSer.deleteProductById(productId);
 	}
 
-	// http://localhost:8080/searchproductbybrand
-	@GetMapping("/searchproductbybrand")
-	public ProductModel searchProductByBrand(@RequestParam("brand") String brand) {
-		return prodSer.searchByBrand(brand);
-	}
-
 	// http://localhost:8080/searchbyproductname
 	@GetMapping("/searchbyproductname")
 	public ProductModel searchByProductName(@RequestParam("productname") String productName) {
@@ -71,6 +65,11 @@ public class ProductController {
 	@GetMapping("/sortbyprice")
 	public List<ProductModel> sortByPrice() {
 		return prodSer.sortByPrice();
+	}
+	
+	@GetMapping("/allproducts")
+	public List<ProductModel> getAllProducts() {
+		return prodSer.getAllProducts();
 	}
 
 }

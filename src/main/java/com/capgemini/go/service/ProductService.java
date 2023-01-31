@@ -12,8 +12,6 @@ public interface ProductService {
 	
 	public String deleteProductById(Integer productId);
 	
-	public ProductModel searchByBrand(String brand);
-	
 	public ProductModel searchByProductName(String productName);
 	
 	public ProductModel searchByColour(String colour);
@@ -23,4 +21,6 @@ public interface ProductService {
 	public List<ProductModel> filterByBrand(String brand);
 	
 	public List<ProductModel> sortByPrice();
+	
+	public List<ProductModel> getAllProducts();
 }
