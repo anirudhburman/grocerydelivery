@@ -42,7 +42,7 @@ class UserServiceTests {
 	}
 	
 	@Test
-	public void testAddUser() {
+	void testAddUser() {
 		
 		when(UserRepo.save(user)).thenReturn(user);
 		
@@ -52,7 +52,7 @@ class UserServiceTests {
 	}
 	
 	@Test
-	public void testGetAllUsers() {
+	void testGetAllUsers() {
 		
 		when(UserRepo.findAll()).thenReturn(users);
 		

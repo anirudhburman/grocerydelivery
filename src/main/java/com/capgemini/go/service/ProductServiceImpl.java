@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.capgemini.go.exception.product.ProductAlreadyExistsException;
-import com.capgemini.go.exception.product.ProductNotFoundException;
+import com.capgemini.go.exception.ProductAlreadyExistsException;
+import com.capgemini.go.exception.ProductNotFoundException;
 import com.capgemini.go.model.ProductModel;
 import com.capgemini.go.repositories.ProductRepository;
 

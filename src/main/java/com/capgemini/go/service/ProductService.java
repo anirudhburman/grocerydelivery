@@ -2,8 +2,8 @@ package com.capgemini.go.service;
 
 import java.util.List;
 
-import com.capgemini.go.exception.product.ProductAlreadyExistsException;
-import com.capgemini.go.exception.product.ProductNotFoundException;
+import com.capgemini.go.exception.ProductAlreadyExistsException;
+import com.capgemini.go.exception.ProductNotFoundException;
 import com.capgemini.go.model.ProductModel;
 
 public interface ProductService {

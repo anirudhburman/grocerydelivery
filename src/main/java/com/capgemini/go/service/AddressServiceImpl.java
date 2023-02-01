@@ -5,9 +5,8 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.capgemini.go.controller.AddressController;
-import com.capgemini.go.exception.address.AddressNotFoundException;
-import com.capgemini.go.exception.customer.CustomerNotFoundException;
+import com.capgemini.go.exception.AddressNotFoundException;
+import com.capgemini.go.exception.CustomerNotFoundException;
 import com.capgemini.go.model.AddressModel;
 import com.capgemini.go.model.CustomerModel;
 import com.capgemini.go.repositories.AddressRepository;
@@ -18,7 +17,7 @@ public class AddressServiceImpl implements AddressService {
 	@Autowired
 	AddressRepository addrRepo;
 	
-	private static final Logger logger = LogManager.getLogger(AddressController.class);
+	private static final Logger logger = LogManager.getLogger(AddressServiceImpl.class);
 
 	@Override
 	public AddressModel addAddress(AddressModel address) {

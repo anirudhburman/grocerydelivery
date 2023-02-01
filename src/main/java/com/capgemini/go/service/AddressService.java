@@ -1,7 +1,7 @@
 package com.capgemini.go.service;
 
-import com.capgemini.go.exception.address.AddressNotFoundException;
-import com.capgemini.go.exception.customer.CustomerNotFoundException;
+import com.capgemini.go.exception.AddressNotFoundException;
+import com.capgemini.go.exception.CustomerNotFoundException;
 import com.capgemini.go.model.AddressModel;
 import com.capgemini.go.model.CustomerModel;
 

@@ -1,12 +1,13 @@
 package com.capgemini.go.service;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.capgemini.go.exception.order.OrderNotFoundException;
-import com.capgemini.go.exception.product.ProductNotFoundException;
+import com.capgemini.go.exception.OrderNotFoundException;
+import com.capgemini.go.exception.ProductNotFoundException;
 import com.capgemini.go.model.OrderModel;
 import com.capgemini.go.model.ProductModel;
 import com.capgemini.go.repositories.OrderRepository;
@@ -32,13 +33,18 @@ public class OrderServiceImpl implements OrderService {
 	}
 
 	@Override
-	public String cancelAProduct(Integer orderId, ProductModel product) throws OrderNotFoundException, ProductNotFoundException {
+	public String cancelAProduct(Integer orderId, Integer productId) throws OrderNotFoundException, ProductNotFoundException {
 		if(orderDao.existsById(orderId)) {
 			OrderModel ord = orderDao.findById(orderId).get();
 			List<ProductModel> prods = ord.getProducts();
-			if(prods.contains(product)) {
-				prods.remove(product);
-			} else {
+			int size = prods.size();
+			for (Iterator<ProductModel> iterator = prods.iterator(); iterator.hasNext();) {
+				ProductModel productModel = iterator.next();
+				if(productModel.getProductId() == productId) {
+					iterator.remove();
+				}
+			}
+			if(prods.size() != size - 1) {
 				throw new ProductNotFoundException();
 			}
 			ord.setProducts(prods);

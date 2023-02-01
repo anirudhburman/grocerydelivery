@@ -13,7 +13,7 @@ import com.capgemini.go.model.AddressModel;
 import com.capgemini.go.repositories.AddressRepository;
 
 @SpringBootTest
-public class AddressServiceTests {
+class AddressServiceTests {
 	
 	@Mock
 	AddressRepository addRepo;

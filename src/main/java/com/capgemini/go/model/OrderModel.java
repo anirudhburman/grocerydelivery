@@ -44,9 +44,10 @@ public class OrderModel {
 	
 	// HAS - MANY relationship
 	// An order can have many products and one product can belong to many orders.
-	@ManyToMany(cascade = CascadeType.ALL) // Owning side
+	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.REFRESH}) // Owning side
 	@JoinTable(name="go_product_orders",joinColumns= {@JoinColumn(name="orderId")}, inverseJoinColumns = {@JoinColumn(name="productId")})
 	@Exclude
+//	@Cascade(CascadeType.SAVE_UPDATE)
 //	@JsonIgnore
 	private List<ProductModel> products;
 	

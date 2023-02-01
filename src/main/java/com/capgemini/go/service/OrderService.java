@@ -1,9 +1,8 @@
 package com.capgemini.go.service;
 
-import com.capgemini.go.exception.order.OrderNotFoundException;
-import com.capgemini.go.exception.product.ProductNotFoundException;
+import com.capgemini.go.exception.OrderNotFoundException;
+import com.capgemini.go.exception.ProductNotFoundException;
 import com.capgemini.go.model.OrderModel;
-import com.capgemini.go.model.ProductModel;
 
 public interface OrderService {
 	
@@ -13,7 +12,7 @@ public interface OrderService {
 	
 	public String cancelOrderById(Integer id) throws OrderNotFoundException;
 	
-	public String cancelAProduct(Integer orderId, ProductModel product) throws OrderNotFoundException, ProductNotFoundException;
+	public String cancelAProduct(Integer orderId, Integer productId) throws OrderNotFoundException, ProductNotFoundException;
 	
 	public OrderModel updateOrder(OrderModel order) throws OrderNotFoundException;
 	

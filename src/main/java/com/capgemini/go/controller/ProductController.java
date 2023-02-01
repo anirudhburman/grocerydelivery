@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capgemini.go.exception.product.ProductAlreadyExistsException;
-import com.capgemini.go.exception.product.ProductNotFoundException;
+import com.capgemini.go.exception.ProductAlreadyExistsException;
+import com.capgemini.go.exception.ProductNotFoundException;
 import com.capgemini.go.model.ProductModel;
 import com.capgemini.go.service.ProductService;
 

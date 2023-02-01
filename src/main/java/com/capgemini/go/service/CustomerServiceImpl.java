@@ -7,9 +7,10 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.capgemini.go.exception.customer.CustomerNotFoundException;
-import com.capgemini.go.exception.customer.EmptyCartException;
-import com.capgemini.go.exception.customer.EmptyWishListException;
+import com.capgemini.go.exception.CustomerAlreadyExistsException;
+import com.capgemini.go.exception.CustomerNotFoundException;
+import com.capgemini.go.exception.EmptyCartException;
+import com.capgemini.go.exception.EmptyWishListException;
 import com.capgemini.go.model.CartModel;
 import com.capgemini.go.model.CustomerModel;
 import com.capgemini.go.model.OrderModel;
@@ -22,10 +23,13 @@ public class CustomerServiceImpl implements CustomerService {
 	@Autowired
 	CustomerRepository custDao;
 	
-	private static final Logger logger = LogManager.getLogger(CustomerService.class);
+	private static final Logger logger = LogManager.getLogger(CustomerServiceImpl.class);
 	
 	@Override
-	public CustomerModel addCustomer(CustomerModel customer) /*throws CustomerAlreadyExistsException*/ {
+	public CustomerModel addCustomer(CustomerModel customer) throws CustomerAlreadyExistsException {
+		if(custDao.findByMobileNo(customer.getMobileNo()) != null) {
+			throw new CustomerAlreadyExistsException();
+		}
 		return custDao.save(customer);
 	}
 

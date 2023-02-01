@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capgemini.go.exception.user.UserNotFoundException;
+import com.capgemini.go.exception.UserNotFoundException;
 import com.capgemini.go.model.UserModel;
 import com.capgemini.go.service.UserService;
 

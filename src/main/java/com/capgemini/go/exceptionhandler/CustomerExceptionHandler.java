@@ -3,10 +3,10 @@ package com.capgemini.go.exceptionhandler;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.capgemini.go.exception.customer.CustomerAlreadyExistsException;
-import com.capgemini.go.exception.customer.CustomerNotFoundException;
-import com.capgemini.go.exception.customer.EmptyCartException;
-import com.capgemini.go.exception.customer.EmptyWishListException;
+import com.capgemini.go.exception.CustomerAlreadyExistsException;
+import com.capgemini.go.exception.CustomerNotFoundException;
+import com.capgemini.go.exception.EmptyCartException;
+import com.capgemini.go.exception.EmptyWishListException;
 
 @RestControllerAdvice
 public class CustomerExceptionHandler {

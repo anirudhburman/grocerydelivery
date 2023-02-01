@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capgemini.go.exception.address.AddressNotFoundException;
-import com.capgemini.go.exception.customer.CustomerNotFoundException;
+import com.capgemini.go.exception.AddressNotFoundException;
+import com.capgemini.go.exception.CustomerNotFoundException;
 import com.capgemini.go.model.AddressModel;
 import com.capgemini.go.model.CustomerModel;
 import com.capgemini.go.service.AddressService;

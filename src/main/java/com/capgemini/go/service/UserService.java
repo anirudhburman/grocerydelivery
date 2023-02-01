@@ -2,7 +2,7 @@ package com.capgemini.go.service;
 
 import java.util.List;
 
-import com.capgemini.go.exception.user.UserNotFoundException;
+import com.capgemini.go.exception.UserNotFoundException;
 import com.capgemini.go.model.UserModel;
 
 public interface UserService {

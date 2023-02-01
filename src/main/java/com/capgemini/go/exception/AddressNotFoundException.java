@@ -1,4 +1,4 @@
-package com.capgemini.go.exception.address;
+package com.capgemini.go.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

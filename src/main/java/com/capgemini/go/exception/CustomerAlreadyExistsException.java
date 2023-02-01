@@ -1,4 +1,4 @@
-package com.capgemini.go.exception.order;
+package com.capgemini.go.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,11 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class OrderNotFoundException extends Exception {
+public class CustomerAlreadyExistsException extends Exception {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String message;
 }

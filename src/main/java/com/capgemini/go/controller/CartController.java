@@ -14,7 +14,11 @@ public class CartController {
 	@Autowired
 	CartService cartSer;
 	
-	//http://localhost:8080/viewcart/{id}
+	/**
+	 * http://localhost:8080/viewcart/{id}
+	 * @param id
+	 * @return
+	 */
 	@GetMapping("/viewcart/{id}")
 	public CartModel viewCart(@PathVariable("id") Integer id) {
 		return cartSer.viewCartById(id);

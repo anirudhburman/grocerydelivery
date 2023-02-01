@@ -1,4 +1,4 @@
-package com.capgemini.go.exception.user;
+package com.capgemini.go.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class UserNotFoundException extends Exception {
+public class CustomerNotFoundException extends Exception {
 	
 	private String message;
 }
