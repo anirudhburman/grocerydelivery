@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.capgemini.go.model.OrderModel;
 
-public interface OrderDao extends CrudRepository<OrderModel, Integer>{
+public interface OrderRepository extends CrudRepository<OrderModel, Integer>{
 
 }

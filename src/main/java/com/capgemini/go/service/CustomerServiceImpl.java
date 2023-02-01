@@ -2,6 +2,8 @@ package com.capgemini.go.service;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,13 +14,15 @@ import com.capgemini.go.model.CartModel;
 import com.capgemini.go.model.CustomerModel;
 import com.capgemini.go.model.OrderModel;
 import com.capgemini.go.model.WishlistModel;
-import com.capgemini.go.repositories.CustomerDao;
+import com.capgemini.go.repositories.CustomerRepository;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
 	
 	@Autowired
-	CustomerDao custDao;
+	CustomerRepository custDao;
+	
+	private static final Logger logger = LogManager.getLogger(CustomerService.class);
 	
 	@Override
 	public CustomerModel addCustomer(CustomerModel customer) /*throws CustomerAlreadyExistsException*/ {
@@ -28,6 +32,7 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public CustomerModel getCustomerById(Integer custId) throws CustomerNotFoundException {
 		if(custDao.existsById(custId)) {
+			logger.info("Customer added to DB");
 			return custDao.findById(custId).get();
 		}
 		throw new CustomerNotFoundException();

@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.capgemini.go.model.UserModel;
 
-public interface UserDao extends CrudRepository<UserModel, Integer>{
+public interface UserRepository extends CrudRepository<UserModel, Integer>{
 
 }

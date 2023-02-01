@@ -8,13 +8,13 @@ import org.springframework.stereotype.Service;
 import com.capgemini.go.exception.product.ProductAlreadyExistsException;
 import com.capgemini.go.exception.product.ProductNotFoundException;
 import com.capgemini.go.model.ProductModel;
-import com.capgemini.go.repositories.ProductDao;
+import com.capgemini.go.repositories.ProductRepository;
 
 @Service
 public class ProductServiceImpl implements ProductService {
 	
 	@Autowired
-	ProductDao prodDao;
+	ProductRepository prodDao;
 
 	@Override
 	public ProductModel addProduct(ProductModel product) throws ProductAlreadyExistsException {

@@ -7,17 +7,17 @@ import org.springframework.stereotype.Service;
 
 import com.capgemini.go.exception.user.UserNotFoundException;
 import com.capgemini.go.model.UserModel;
-import com.capgemini.go.repositories.UserDao;
+import com.capgemini.go.repositories.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService {
 	
 	@Autowired
-	UserDao userDao;
+	UserRepository userRepo;
 	
 	@Override
 	public UserModel addUser(UserModel user) {
-		return userDao.save(user);
+		return userRepo.save(user);
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public List<UserModel> getAllUsers() {
-		return (List<UserModel>) userDao.findAll();
+		return (List<UserModel>) userRepo.findAll();
 	}
 
 }

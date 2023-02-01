@@ -9,13 +9,13 @@ import com.capgemini.go.exception.order.OrderNotFoundException;
 import com.capgemini.go.exception.product.ProductNotFoundException;
 import com.capgemini.go.model.OrderModel;
 import com.capgemini.go.model.ProductModel;
-import com.capgemini.go.repositories.OrderDao;
+import com.capgemini.go.repositories.OrderRepository;
 
 @Service
 public class OrderServiceImpl implements OrderService {
 	
 	@Autowired
-	OrderDao orderDao;
+	OrderRepository orderDao;
 	
 	@Override
 	public OrderModel addOrder(OrderModel order) {

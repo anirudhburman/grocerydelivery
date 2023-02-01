@@ -4,13 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.capgemini.go.model.WishlistModel;
-import com.capgemini.go.repositories.WishlistDao;
+import com.capgemini.go.repositories.WishlistRepository;
 
 @Service
 public class WishlistServiceImpl implements WishlistService {
 	
 	@Autowired
-	WishlistDao wishDao;
+	WishlistRepository wishDao;
 
 	@Override
 	public WishlistModel viewWishlist(Integer id) {
