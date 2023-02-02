@@ -15,9 +15,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.ToString.Exclude;
 
 @AllArgsConstructor
-@NoArgsConstructor
+//@NoArgsConstructor
 @Getter
 @Setter
 @ToString
@@ -34,6 +35,7 @@ public class UserModel {
 	private String userPassword;
 	@OneToOne(mappedBy = "user")
 	@JsonIgnore
+	@Exclude
 	private CustomerModel customer;
 	
 	public UserModel(String userName, Integer userId, String userType, String userPassword) {
@@ -43,6 +45,9 @@ public class UserModel {
 		this.userType = userType;
 		this.userPassword = userPassword;
 	}
-	
+
+	public UserModel() {
+		super();
+	}
 	
 }

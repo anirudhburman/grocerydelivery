@@ -12,6 +12,6 @@ public class OrderExceptionHandler {
 	
 	@ExceptionHandler(OrderNotFoundException.class)
 	public ResponseEntity<String> handleOrderNotFoundException() {
-		return new ResponseEntity<String>("Order not found", HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("Order not found", HttpStatus.NOT_FOUND);
 	}
 }

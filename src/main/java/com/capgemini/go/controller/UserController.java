@@ -22,7 +22,7 @@ public class UserController {
 	//http://localhost:8080/adduser
 	@PostMapping("/adduser")
 	public UserModel addUser(@RequestBody UserModel user) {
-		return userSer.addUser(user);
+	    return userSer.addUser(user);
 	}
 	
 	//http://localhost:8080/loginuser

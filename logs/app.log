@@ -114,3 +114,645 @@
 2023-02-02 15:55:29,939 DEBUG c.c.g.s.UserServiceTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
 2023-02-02 15:55:29,940 INFO c.c.g.s.UserServiceTests [main] No active profile set, falling back to 1 default profile: "default"
 2023-02-02 15:55:35,752 INFO c.c.g.s.UserServiceTests [main] Started UserServiceTests in 6.118 seconds (JVM running for 7.565)
+2023-02-02 20:40:19,951 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 17252 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 20:40:19,960 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 20:40:19,961 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 20:40:21,684 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 1.991 seconds (JVM running for 3.045)
+2023-02-02 20:41:30,071 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 15408 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 20:41:30,078 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 20:41:30,079 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 20:41:31,844 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.049 seconds (JVM running for 3.096)
+2023-02-02 20:45:01,014 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 3992 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 20:45:01,019 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 20:45:01,020 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 20:45:02,769 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.012 seconds (JVM running for 3.062)
+2023-02-02 20:46:07,201 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 17588 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 20:46:07,209 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 20:46:07,209 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 20:46:08,933 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 1.992 seconds (JVM running for 3.046)
+2023-02-02 20:54:45,373 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 20132 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 20:54:45,379 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 20:54:45,379 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 20:54:47,116 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 1.999 seconds (JVM running for 3.017)
+2023-02-02 20:57:59,073 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 9600 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 20:57:59,082 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 20:57:59,083 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 20:58:00,842 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.035 seconds (JVM running for 3.031)
+2023-02-02 21:01:44,214 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 19932 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:01:44,221 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:01:44,222 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:01:45,981 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.025 seconds (JVM running for 3.041)
+2023-02-02 21:04:04,945 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 21100 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:04:04,945 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:04:04,958 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:04:06,670 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 1.982 seconds (JVM running for 3.04)
+2023-02-02 21:05:23,083 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 16544 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:05:23,088 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:05:23,088 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:05:26,019 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 3.15 seconds (JVM running for 3.778)
+2023-02-02 21:17:28,721 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 6172 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:17:28,729 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:17:28,730 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:17:30,692 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.24 seconds (JVM running for 3.303)
+2023-02-02 21:25:15,102 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 732 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:25:15,109 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:25:15,110 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:25:16,977 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.15 seconds (JVM running for 3.279)
+2023-02-02 21:28:10,210 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 10592 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:28:10,221 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:28:10,222 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:28:12,436 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.569 seconds (JVM running for 3.887)
+2023-02-02 21:31:40,198 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 20768 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:31:40,206 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:31:40,207 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:31:42,324 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.459 seconds (JVM running for 3.691)
+2023-02-02 21:34:57,555 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 3076 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:34:57,562 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:34:57,563 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:34:59,581 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.344 seconds (JVM running for 3.583)
+2023-02-02 21:35:27,100 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 20584 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:35:27,108 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:35:27,109 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:35:29,186 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.417 seconds (JVM running for 3.656)
+2023-02-02 21:39:18,205 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 4452 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:39:18,214 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:39:18,214 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:39:20,417 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.549 seconds (JVM running for 3.765)
+2023-02-02 21:40:55,498 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 7368 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:40:55,505 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:40:55,506 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:40:57,508 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.306 seconds (JVM running for 3.556)
+2023-02-02 21:43:08,031 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 17404 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:43:08,038 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:43:08,039 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:43:10,461 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.802 seconds (JVM running for 4.111)
+2023-02-02 21:44:27,101 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 17632 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:44:27,109 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:44:27,110 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:44:29,257 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.51 seconds (JVM running for 3.842)
+2023-02-02 21:45:39,049 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 18864 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:45:39,056 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:45:39,057 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:45:41,187 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.479 seconds (JVM running for 3.74)
+2023-02-02 21:47:20,700 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 2080 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:47:20,710 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:47:20,711 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:47:22,904 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.584 seconds (JVM running for 3.823)
+2023-02-02 21:51:37,024 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 21196 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:51:37,032 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:51:37,033 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:51:39,072 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.357 seconds (JVM running for 3.589)
+2023-02-02 21:53:51,333 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 12036 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:53:51,342 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:53:51,345 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:53:53,253 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.231 seconds (JVM running for 3.353)
+2023-02-02 21:55:59,221 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 12644 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:55:59,229 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:55:59,230 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:56:01,366 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.448 seconds (JVM running for 3.63)
+2023-02-02 21:59:38,553 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 11448 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 21:59:38,560 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 21:59:38,563 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 21:59:40,492 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.212 seconds (JVM running for 3.404)
+2023-02-02 22:03:08,637 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 20920 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:03:08,647 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:03:08,648 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:03:10,617 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.296 seconds (JVM running for 3.535)
+2023-02-02 22:05:10,784 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 16744 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:05:10,795 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:05:10,797 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:05:13,076 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.634 seconds (JVM running for 3.899)
+2023-02-02 22:07:34,019 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 9284 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:07:34,026 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:07:34,027 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:07:36,167 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.519 seconds (JVM running for 3.934)
+2023-02-02 22:08:17,374 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 5436 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:08:17,380 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:08:17,382 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:08:19,394 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.349 seconds (JVM running for 3.54)
+2023-02-02 22:09:24,363 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 18056 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:09:24,371 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:09:24,372 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:09:26,553 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.556 seconds (JVM running for 3.901)
+2023-02-02 22:10:19,039 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 2212 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:10:19,049 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:10:19,050 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:10:20,883 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.144 seconds (JVM running for 3.277)
+2023-02-02 22:14:52,851 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 6736 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:14:52,863 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:14:52,864 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:14:54,707 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.195 seconds (JVM running for 4.137)
+2023-02-02 22:15:29,944 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 4452 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:15:29,951 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:15:29,952 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:15:30,562 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 4452 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:15:30,563 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:15:30,563 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:15:30,755 ERROR o.s.t.c.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5eed6dfb] to prepare test instance [com.capgemini.go.controller.UserControllerTests@5600a5da]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.7.8.jar:2.7.8]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91) ~[.cp/:?]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userSer'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.capgemini.go.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.8.jar:2.7.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.25.jar:5.3.25]
+	... 73 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.capgemini.go.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.8.jar:2.7.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.25.jar:5.3.25]
+	... 73 more
+2023-02-02 22:15:30,881 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 4452 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:15:30,883 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:15:30,883 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:15:31,207 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 4452 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:15:31,208 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:15:31,208 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:15:31,377 ERROR o.s.t.c.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5eed6dfb] to prepare test instance [com.capgemini.go.controller.UserControllerTests@3de79067]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.7.8.jar:2.7.8]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91) ~[.cp/:?]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userSer'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.capgemini.go.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.8.jar:2.7.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.25.jar:5.3.25]
+	... 73 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.capgemini.go.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.8.jar:2.7.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.25.jar:5.3.25]
+	... 73 more
+2023-02-02 22:17:00,194 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 7960 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:17:00,200 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:17:00,201 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:17:05,909 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 5.998 seconds (JVM running for 7.329)
+2023-02-02 22:17:06,157 ERROR o.s.t.c.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@12ae75f1] to prepare test instance [com.capgemini.go.controller.UserControllerTests@6eeb15f9]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.capgemini.go.controller.UserControllerTests': Unsatisfied dependency expressed through field 'mockMvc'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.test.web.servlet.MockMvc' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.7.8.jar:2.7.8]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91) ~[.cp/:?]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.test.web.servlet.MockMvc' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 77 more
+2023-02-02 22:17:06,182 ERROR o.s.t.c.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@12ae75f1] to prepare test instance [com.capgemini.go.controller.UserControllerTests@35b70f9d]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.capgemini.go.controller.UserControllerTests': Unsatisfied dependency expressed through field 'mockMvc'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.test.web.servlet.MockMvc' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.7.8.jar:2.7.8]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.25.jar:5.3.25]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102) ~[.cp/:?]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95) ~[.cp/:?]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91) ~[.cp/:?]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.test.web.servlet.MockMvc' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 77 more
+2023-02-02 22:17:32,556 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 2980 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:17:32,565 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:17:32,566 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:17:38,937 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 6.683 seconds (JVM running for 8.077)
+2023-02-02 22:18:13,583 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 20696 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:18:13,590 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:18:13,591 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:18:19,396 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 6.085 seconds (JVM running for 7.54)
+2023-02-02 22:20:45,175 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 16588 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:20:45,182 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:20:45,183 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:20:51,167 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 6.311 seconds (JVM running for 7.71)
+2023-02-02 22:21:25,512 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 17108 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:21:25,518 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:21:25,519 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:21:31,137 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 5.878 seconds (JVM running for 7.563)
+2023-02-02 22:22:08,653 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 13940 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:22:08,659 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:22:08,660 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:22:14,361 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 5.984 seconds (JVM running for 7.346)
+2023-02-02 22:24:54,389 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 10608 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:24:54,397 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:24:54,398 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:24:59,825 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 5.718 seconds (JVM running for 7.029)
+2023-02-02 22:26:22,000 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 11008 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:26:22,009 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:26:22,010 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:26:27,586 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 5.818 seconds (JVM running for 7.176)
+2023-02-02 22:30:48,369 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 2676 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:30:48,379 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:30:48,380 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:30:50,710 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.711 seconds (JVM running for 3.999)
+2023-02-02 22:33:24,469 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 11872 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:33:24,476 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:33:24,477 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:33:26,557 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.433 seconds (JVM running for 3.735)
+2023-02-02 22:33:49,832 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 2128 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:33:49,841 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:33:49,842 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:33:51,938 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.483 seconds (JVM running for 4.137)
+2023-02-02 22:34:40,507 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 10808 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:34:40,515 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:34:40,517 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:34:42,673 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.529 seconds (JVM running for 3.892)
+2023-02-02 22:42:16,025 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 18520 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:42:16,038 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:42:16,039 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:42:22,230 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 6.468 seconds (JVM running for 7.872)
+2023-02-02 22:42:31,475 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 8320 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:42:31,483 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:42:31,485 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:42:37,086 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 5.887 seconds (JVM running for 7.295)
+2023-02-02 22:43:15,273 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 16696 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:43:15,282 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:43:15,283 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:43:20,878 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 5.854 seconds (JVM running for 7.362)
+2023-02-02 22:44:02,067 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 19804 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:44:02,074 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:44:02,075 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:44:07,845 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 6.021 seconds (JVM running for 7.451)
+2023-02-02 22:44:59,071 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 11872 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:44:59,079 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:44:59,080 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:45:04,548 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 5.718 seconds (JVM running for 7.242)
+2023-02-02 22:47:19,030 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 13056 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:47:19,042 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:47:19,043 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:47:24,775 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 5.965 seconds (JVM running for 7.347)
+2023-02-02 22:49:03,587 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 19772 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:49:03,599 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:49:03,599 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:49:05,492 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.234 seconds (JVM running for 3.318)
+2023-02-02 22:49:28,994 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 13080 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:49:29,001 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:49:29,002 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:49:30,765 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.091 seconds (JVM running for 3.158)
+2023-02-02 22:50:02,463 INFO c.c.g.c.UserControllerTests [main] Starting UserControllerTests using Java 17.0.5 on LIN33001523 with PID 19896 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 22:50:02,471 DEBUG c.c.g.c.UserControllerTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 22:50:02,472 INFO c.c.g.c.UserControllerTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:50:04,280 INFO c.c.g.c.UserControllerTests [main] Started UserControllerTests in 2.065 seconds (JVM running for 3.234)

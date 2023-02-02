@@ -1,5 +1,7 @@
 package com.capgemini.go.exceptionhandler;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -12,22 +14,22 @@ import com.capgemini.go.exception.EmptyWishListException;
 public class CustomerExceptionHandler {
 	
 	@ExceptionHandler(CustomerNotFoundException.class)
-	public String handleCustomerNotFoundException() {
-		return "Customer not found";
+	public ResponseEntity<String> handleCustomerNotFoundException() {
+		return new ResponseEntity<>("Customer not found", HttpStatus.NOT_FOUND);
 	}
 	
 	@ExceptionHandler(CustomerAlreadyExistsException.class)
-	public String handleCustomerAlreadyExistException() {
-		return "Customer Already Exist";
+	public ResponseEntity<String> handleCustomerAlreadyExistException() {
+		return new ResponseEntity<>("Customer Already Exist", HttpStatus.NOT_FOUND);
 	}
 	
 	@ExceptionHandler(EmptyCartException.class)
-	public String handleEmptyCartException() {
-		return "Cart is Empty. Nothing to display!";
+	public ResponseEntity<String> handleEmptyCartException() {
+		return new ResponseEntity<>("Cart is Empty. Nothing to display!", HttpStatus.NOT_FOUND);
 	}
 	
 	@ExceptionHandler(EmptyWishListException.class)
-	public String handleEmptyWishListException() {
-		return "Wishlist is Empty. Nothing to display!";
+	public ResponseEntity<String> handleEmptyWishListException() {
+		return new ResponseEntity<>("Wishlist is Empty. Nothing to display!", HttpStatus.NOT_FOUND);
 	}
 }
