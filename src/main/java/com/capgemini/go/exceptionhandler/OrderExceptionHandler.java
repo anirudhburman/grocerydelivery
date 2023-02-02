@@ -9,7 +9,7 @@ import com.capgemini.go.exception.OrderNotFoundException;
 public class OrderExceptionHandler {
 	
 	@ExceptionHandler(OrderNotFoundException.class)
-	public String handleUserNotFoundException() {
+	public String handleOrderNotFoundException() {
 		return "Order not found";
 	}
 }

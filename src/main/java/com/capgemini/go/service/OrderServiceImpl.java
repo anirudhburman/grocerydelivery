@@ -16,17 +16,17 @@ import com.capgemini.go.repositories.OrderRepository;
 public class OrderServiceImpl implements OrderService {
 	
 	@Autowired
-	OrderRepository orderDao;
+	OrderRepository orderRepo;
 	
 	@Override
 	public OrderModel addOrder(OrderModel order) {
-		return orderDao.save(order);
+		return orderRepo.save(order);
 	}
 
 	@Override
 	public String cancelOrder(OrderModel order) throws OrderNotFoundException {
-		if(orderDao.existsById(order.getOrderId())) {
-			orderDao.delete(order);
+		if(orderRepo.existsById(order.getOrderId())) {
+			orderRepo.delete(order);
 			return "Order deleted";
 		}
 		throw new OrderNotFoundException();
@@ -34,13 +34,13 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public String cancelAProduct(Integer orderId, Integer productId) throws OrderNotFoundException, ProductNotFoundException {
-		if(orderDao.existsById(orderId)) {
-			OrderModel ord = orderDao.findById(orderId).get();
+		if(orderRepo.existsById(orderId)) {
+			OrderModel ord = orderRepo.findById(orderId).get();
 			List<ProductModel> prods = ord.getProducts();
 			int size = prods.size();
 			for (Iterator<ProductModel> iterator = prods.iterator(); iterator.hasNext();) {
 				ProductModel productModel = iterator.next();
-				if(productModel.getProductId() == productId) {
+				if(productModel.getProductId().equals(productId)) {
 					iterator.remove();
 				}
 			}
@@ -48,7 +48,7 @@ public class OrderServiceImpl implements OrderService {
 				throw new ProductNotFoundException();
 			}
 			ord.setProducts(prods);
-			orderDao.save(ord);
+			orderRepo.save(ord);
 			return "Product deleted";
 		}
 		throw new OrderNotFoundException();
@@ -56,8 +56,8 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public OrderModel updateOrder(OrderModel order) throws OrderNotFoundException {
-		if(orderDao.existsById(order.getOrderId())) {
-			orderDao.save(order);
+		if(orderRepo.existsById(order.getOrderId())) {
+			orderRepo.save(order);
 			return order;
 		}
 		throw new OrderNotFoundException();
@@ -65,8 +65,8 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public OrderModel getOrderById(Integer orderId) throws OrderNotFoundException {
-		if(orderDao.existsById(orderId)) {
-			return orderDao.findById(orderId).get();
+		if(orderRepo.existsById(orderId)) {
+			return orderRepo.findById(orderId).get();
 		}
 		throw new OrderNotFoundException();
 	}
@@ -78,8 +78,8 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public String cancelOrderById(Integer id) throws OrderNotFoundException {
-		if(orderDao.existsById(id)) {
-			orderDao.deleteById(id);
+		if(orderRepo.existsById(id)) {
+			orderRepo.deleteById(id);
 			return "Order deleted by ID";
 		}
 		throw new OrderNotFoundException();

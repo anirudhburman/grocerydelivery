@@ -9,7 +9,7 @@ import com.capgemini.go.exception.AddressNotFoundException;
 public class AddressExceptionHandler {
 	
 	@ExceptionHandler(AddressNotFoundException.class)
-	public String handleUserNotFoundException() {
+	public String handleAddressNotFoundException() {
 		return "Address not found";
 	}
 }

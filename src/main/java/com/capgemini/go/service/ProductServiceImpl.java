@@ -14,28 +14,28 @@ import com.capgemini.go.repositories.ProductRepository;
 public class ProductServiceImpl implements ProductService {
 	
 	@Autowired
-	ProductRepository prodDao;
+	ProductRepository prodRepo;
 
 	@Override
 	public ProductModel addProduct(ProductModel product) throws ProductAlreadyExistsException {
-		if(prodDao.findByProductName(product.getProductName()) != null) {
+		if(prodRepo.findByProductName(product.getProductName()) != null) {
 			throw new ProductAlreadyExistsException();
 		}
-		return prodDao.save(product);
+		return prodRepo.save(product);
 	}
 
 	@Override
 	public ProductModel updateProduct(ProductModel product) throws ProductNotFoundException {
-		if(prodDao.existsById(product.getProductId())) {
-			return prodDao.save(product);
+		if(prodRepo.existsById(product.getProductId())) {
+			return prodRepo.save(product);
 		}
 		throw new ProductNotFoundException();
 	}
 
 	@Override
 	public String deleteProductById(Integer productId) throws ProductNotFoundException {
-		if(prodDao.existsById(productId)) {
-			prodDao.deleteById(productId);
+		if(prodRepo.existsById(productId)) {
+			prodRepo.deleteById(productId);
 			return "product deleted successfully";
 		}
 		throw new ProductNotFoundException();
@@ -43,7 +43,7 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public ProductModel searchByProductName(String productName) throws ProductNotFoundException {
-		ProductModel prod = prodDao.findByProductName(productName);
+		ProductModel prod = prodRepo.findByProductName(productName);
 		if(prod != null) {
 			return prod;
 		}
@@ -52,27 +52,27 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public List<ProductModel> searchByColour(String colour) {
-		return prodDao.findAllByColour(colour);
+		return prodRepo.findAllByColour(colour);
 	}
 
 	@Override
 	public List<ProductModel> searchByDimension(String dimension) {
-		return prodDao.findAllByDimension(dimension);
+		return prodRepo.findAllByDimension(dimension);
 	}
 
 	@Override
 	public List<ProductModel> filterByBrand(String brand) {
-		return prodDao.findAllByBrand(brand);
+		return prodRepo.findAllByBrand(brand);
 	}
 
 	@Override
 	public List<ProductModel> sortByPrice() {
-		return prodDao.findAllSortedByPrice();
+		return prodRepo.findAllSortedByPrice();
 	}
 
 	@Override
 	public List<ProductModel> getAllProducts() {
-		return (List<ProductModel>) prodDao.findAll();
+		return (List<ProductModel>) prodRepo.findAll();
 	}
 
 }

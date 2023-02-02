@@ -69,6 +69,7 @@ public class ProductController {
 		return prodSer.sortByPrice();
 	}
 	
+	// http://localhost:8080/allproducts
 	@GetMapping("/allproducts")
 	public List<ProductModel> getAllProducts() {
 		return prodSer.getAllProducts();

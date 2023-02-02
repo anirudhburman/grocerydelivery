@@ -10,12 +10,12 @@ import com.capgemini.go.exception.ProductNotFoundException;
 public class ProductExceptionHandler {
 	
 	@ExceptionHandler(ProductNotFoundException.class)
-	public String handleUserNotFoundException() {
+	public String handleProductNotFoundException() {
 		return "Product not found";
 	}
 	
 	@ExceptionHandler(ProductAlreadyExistsException.class)
-	public String handleUserAlreadyExistException() {
+	public String handleProductAlreadyExistException() {
 		return "Product Already Exist";
 	}
 }

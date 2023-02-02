@@ -10,11 +10,11 @@ import com.capgemini.go.repositories.CartRepository;
 public class CartServiceImpl implements CartService {
 	
 	@Autowired
-	CartRepository cartDao;
+	CartRepository cartRepo;
 
 	@Override
 	public CartModel viewCartById(Integer id) {
-		return cartDao.findById(id).get();
+		return cartRepo.findById(id).get();
 	}
 
 }

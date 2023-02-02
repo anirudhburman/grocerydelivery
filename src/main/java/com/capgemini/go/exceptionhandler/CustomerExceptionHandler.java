@@ -12,12 +12,12 @@ import com.capgemini.go.exception.EmptyWishListException;
 public class CustomerExceptionHandler {
 	
 	@ExceptionHandler(CustomerNotFoundException.class)
-	public String handleUserNotFoundException() {
+	public String handleCustomerNotFoundException() {
 		return "Customer not found";
 	}
 	
 	@ExceptionHandler(CustomerAlreadyExistsException.class)
-	public String handleUserAlreadyExistException() {
+	public String handleCustomerAlreadyExistException() {
 		return "Customer Already Exist";
 	}
 	

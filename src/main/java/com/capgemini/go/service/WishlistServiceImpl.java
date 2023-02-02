@@ -10,11 +10,11 @@ import com.capgemini.go.repositories.WishlistRepository;
 public class WishlistServiceImpl implements WishlistService {
 	
 	@Autowired
-	WishlistRepository wishDao;
+	WishlistRepository wishRepo;
 
 	@Override
 	public WishlistModel viewWishlist(Integer id) {
-		return wishDao.findById(id).get();
+		return wishRepo.findById(id).get();
 	}
 
 }
