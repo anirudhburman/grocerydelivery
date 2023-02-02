@@ -90,3 +90,27 @@
 2023-02-02 11:17:38,166 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
 2023-02-02 11:17:38,166 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
 2023-02-02 11:17:39,330 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 1.217 seconds (JVM running for 41594.649)
+2023-02-02 15:19:04,988 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 9696 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 15:19:04,996 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 15:19:04,997 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 15:19:09,086 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 4.72 seconds (JVM running for 5.704)
+2023-02-02 15:43:01,132 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 9696 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 15:43:01,133 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 15:43:01,133 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 15:43:02,781 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 1.71 seconds (JVM running for 1439.399)
+2023-02-02 15:43:15,668 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 9696 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 15:43:15,669 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 15:43:15,669 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 15:43:16,870 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 1.245 seconds (JVM running for 1453.488)
+2023-02-02 15:43:40,053 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 9696 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 15:43:40,054 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 15:43:40,054 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 15:43:41,251 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 1.242 seconds (JVM running for 1477.869)
+2023-02-02 15:43:53,900 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 19548 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 15:43:53,906 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 15:43:53,906 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 15:43:57,947 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 4.362 seconds (JVM running for 5.302)
+2023-02-02 15:55:29,931 INFO c.c.g.s.UserServiceTests [main] Starting UserServiceTests using Java 17.0.5 on LIN33001523 with PID 1788 (started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-02 15:55:29,939 DEBUG c.c.g.s.UserServiceTests [main] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-02 15:55:29,940 INFO c.c.g.s.UserServiceTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 15:55:35,752 INFO c.c.g.s.UserServiceTests [main] Started UserServiceTests in 6.118 seconds (JVM running for 7.565)
