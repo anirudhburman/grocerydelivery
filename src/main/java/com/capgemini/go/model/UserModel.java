@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -18,7 +19,7 @@ import lombok.ToString;
 import lombok.ToString.Exclude;
 
 @AllArgsConstructor
-//@NoArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 @ToString
@@ -26,12 +27,14 @@ import lombok.ToString.Exclude;
 @Table(name = "user_go_details")
 public class UserModel {
     
-	private String userName;
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="user_seq")
 	@SequenceGenerator(name="user_seq",sequenceName="user_seq", allocationSize=1)
 	private Integer userId;
+	@NotBlank(message="UserName is a required field")
+	private String userName;
 	private String userType;
+	@NotBlank(message="Password is a required field")
 	private String userPassword;
 	@OneToOne(mappedBy = "user")
 	@JsonIgnore
@@ -44,10 +47,6 @@ public class UserModel {
 		this.userId = userId;
 		this.userType = userType;
 		this.userPassword = userPassword;
-	}
-
-	public UserModel() {
-		super();
 	}
 	
 }

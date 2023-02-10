@@ -2,6 +2,8 @@ package com.capgemini.go.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,7 +23,7 @@ public class UserController {
 	
 	//http://localhost:8080/adduser
 	@PostMapping("/adduser")
-	public UserModel addUser(@RequestBody UserModel user) {
+	public UserModel addUser(@Valid @RequestBody UserModel user) {
 	    return userSer.addUser(user);
 	}
 	

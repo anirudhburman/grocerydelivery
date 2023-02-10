@@ -64,6 +64,7 @@ public class AddressController {
 	 * @return
 	 * @throws CustomerNotFoundException
 	 */
+	@GetMapping("/getcustomerbyaddressid/{id}")
 	public CustomerModel getCustomerByAddressId(@PathVariable("id") Integer id) throws CustomerNotFoundException {
 		return addrSer.getCustomerByAddressId(id);
 	}

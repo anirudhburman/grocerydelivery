@@ -21,7 +21,7 @@ import com.capgemini.go.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @WebMvcTest(UserController.class)
-public class UserControllerTests {
+class UserControllerTests {
   
   @Autowired
   private MockMvc mockMvc;
@@ -46,7 +46,7 @@ public class UserControllerTests {
 //  }
   
   @Test
-  public void testGetAllUsers() throws Exception {
+  void testGetAllUsers() throws Exception {
     List<UserModel> users = new ArrayList<>();
     UserModel user1 = new UserModel();
     user1.setUserName("John Doe");

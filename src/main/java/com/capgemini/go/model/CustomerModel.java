@@ -65,7 +65,6 @@ public class CustomerModel {
 	
 	// One Customer can have many Orders
 	@OneToMany(mappedBy = "customer")
-	@Exclude
 	@JsonIgnore
 	private List<OrderModel> orders;
 	

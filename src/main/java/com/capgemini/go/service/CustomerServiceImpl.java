@@ -79,7 +79,10 @@ public class CustomerServiceImpl implements CustomerService {
 		if(!custRepo.existsById(custId)) {
 			throw new CustomerNotFoundException();
 		}
-		return custRepo.findById(custId).get().getOrders();
+		if(custRepo.findById(custId).isPresent()) {
+			return custRepo.findById(custId).get().getOrders();
+		}
+		throw new CustomerNotFoundException();
 	}
 
 	@Override
