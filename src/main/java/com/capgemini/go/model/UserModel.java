@@ -1,5 +1,6 @@
 package com.capgemini.go.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -32,7 +33,9 @@ public class UserModel {
 	@SequenceGenerator(name="user_seq",sequenceName="user_seq", allocationSize=1)
 	private Integer userId;
 	@NotBlank(message="UserName is a required field")
+	@Column(unique = true)
 	private String userName;
+	@JsonIgnore
 	private String userType;
 	@NotBlank(message="Password is a required field")
 	private String userPassword;
@@ -48,5 +51,14 @@ public class UserModel {
 		this.userType = userType;
 		this.userPassword = userPassword;
 	}
+
+	public UserModel(@NotBlank(message = "UserName is a required field") String userName,
+			@NotBlank(message = "Password is a required field") String userPassword) {
+		super();
+		this.userName = userName;
+		this.userPassword = userPassword;
+	}
+	
+	
 	
 }

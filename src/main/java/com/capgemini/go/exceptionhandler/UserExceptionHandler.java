@@ -11,7 +11,7 @@ import com.capgemini.go.exception.UserNotFoundException;
 public class UserExceptionHandler {
 	
 	@ExceptionHandler(UserNotFoundException.class)
-	public ResponseEntity<String> handleUserNotFoundException() {
-		return new ResponseEntity<>("Address not found", HttpStatus.NOT_FOUND);
+	public ResponseEntity<String> handleUserNotFoundException(String msg) {
+		return new ResponseEntity<>(msg + " not found", HttpStatus.NOT_FOUND);
 	}
 }

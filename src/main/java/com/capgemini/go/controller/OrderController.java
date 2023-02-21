@@ -42,7 +42,6 @@ public class OrderController {
 		return orderSer.cancelOrderById(id);
 	}
 
-	// NOT WORKING. TRY SENDING PRODUCT ID INSTEAD OF THE WHOLE OBJECT
 	/**
 	 * http://localhost:8080/cancelproduct/{orderid}/{productid}
 	 * 

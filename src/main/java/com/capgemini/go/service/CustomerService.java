@@ -4,8 +4,6 @@ import java.util.List;
 
 import com.capgemini.go.exception.CustomerAlreadyExistsException;
 import com.capgemini.go.exception.CustomerNotFoundException;
-import com.capgemini.go.exception.EmptyCartException;
-import com.capgemini.go.exception.EmptyWishListException;
 import com.capgemini.go.model.CartModel;
 import com.capgemini.go.model.CustomerModel;
 import com.capgemini.go.model.OrderModel;
@@ -27,8 +25,8 @@ public interface CustomerService {
 	
 	public List<OrderModel> getOrdersByCustomerId(Integer custId) throws CustomerNotFoundException;
 	
-	public CartModel getCartByCustId(Integer custId) throws EmptyCartException, CustomerNotFoundException;
+	public CartModel getCartByCustId(Integer custId) throws CustomerNotFoundException;
 	
-	public WishlistModel getWishListByCustId(Integer id) throws EmptyWishListException, CustomerNotFoundException;
+	public WishlistModel getWishListByCustId(Integer id) throws CustomerNotFoundException;
 	
 }

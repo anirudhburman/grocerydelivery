@@ -28,6 +28,7 @@ public class CustomerController {
 	// http://localhost:8080/addcust
 	@PostMapping("/addcust")
 	public CustomerModel addCust(@RequestBody CustomerModel cust) throws CustomerAlreadyExistsException {
+//		CustomerModel customer = custMapper.toEntity(cust);
 		return custSer.addCustomer(cust);
 	}
 

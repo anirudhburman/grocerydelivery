@@ -44,7 +44,7 @@ public class WishlistModel {
 	
 	// HAS - A relationship
 	// One wishlist can have many products.
-	@OneToMany(cascade = CascadeType.ALL)
+	@OneToMany(cascade = CascadeType.MERGE)
 	private List<ProductModel> products;
 	private Integer quantity;
 	

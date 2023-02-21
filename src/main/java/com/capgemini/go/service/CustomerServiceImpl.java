@@ -1,5 +1,6 @@
 package com.capgemini.go.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -9,12 +10,13 @@ import org.springframework.stereotype.Service;
 
 import com.capgemini.go.exception.CustomerAlreadyExistsException;
 import com.capgemini.go.exception.CustomerNotFoundException;
-import com.capgemini.go.exception.EmptyCartException;
-import com.capgemini.go.exception.EmptyWishListException;
 import com.capgemini.go.model.CartModel;
 import com.capgemini.go.model.CustomerModel;
 import com.capgemini.go.model.OrderModel;
+import com.capgemini.go.model.ProductModel;
+import com.capgemini.go.model.UserModel;
 import com.capgemini.go.model.WishlistModel;
+import com.capgemini.go.repositories.AddressRepository;
 import com.capgemini.go.repositories.CustomerRepository;
 
 @Service
@@ -23,13 +25,30 @@ public class CustomerServiceImpl implements CustomerService {
 	@Autowired
 	CustomerRepository custRepo;
 	
+	@Autowired
+	AddressRepository addrRepo;
+	
 	private static final Logger logger = LogManager.getLogger(CustomerServiceImpl.class);
 	
 	@Override
 	public CustomerModel addCustomer(CustomerModel customer) throws CustomerAlreadyExistsException {
+		
 		if(custRepo.findByMobileNo(customer.getMobileNo()) != null) {
 			throw new CustomerAlreadyExistsException();
 		}
+		
+		List<ProductModel> prods = new ArrayList<>();
+		WishlistModel wishList = new WishlistModel();
+		wishList.setProducts(prods);
+		wishList.setQuantity(0);
+		CartModel cart = new CartModel();
+		cart.setProducts(prods);
+		cart.setQuantity(0);
+		UserModel user = customer.getUser();
+		user.setUserType("Customer");
+		customer.setUser(user);
+		customer.setWishlist(wishList);
+		customer.setCart(cart);
 		return custRepo.save(customer);
 	}
 
@@ -86,27 +105,20 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 
 	@Override
-	public CartModel getCartByCustId(Integer custId) throws EmptyCartException, CustomerNotFoundException {
+	public CartModel getCartByCustId(Integer custId) throws CustomerNotFoundException {
 		if(!custRepo.existsById(custId)) {
 			throw new CustomerNotFoundException();
 		}
 		CartModel cart = custRepo.findById(custId).get().getCart();
-		if(cart.getProducts().isEmpty()) {
-			throw new EmptyCartException();
-		}
 		return cart;
 	}
 
 	@Override
-	public WishlistModel getWishListByCustId(Integer id) throws EmptyWishListException, CustomerNotFoundException {
+	public WishlistModel getWishListByCustId(Integer id) throws CustomerNotFoundException {
 		if(!custRepo.existsById(id)) {
 			throw new CustomerNotFoundException();
 		}
-		WishlistModel wishlist = custRepo.findById(id).get().getWishlist();
-		if(wishlist.getProducts().isEmpty()) {
-			throw new EmptyWishListException();
-		}
-		return wishlist;
+		return custRepo.findById(id).get().getWishlist();
 	}
 
 }

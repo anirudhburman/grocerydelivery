@@ -7,6 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -29,10 +31,15 @@ public class AddressModel {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="add_seq")
 	@SequenceGenerator(name="add_seq",sequenceName="add_seq", allocationSize=1)
 	private Integer addressId;
+	@NotBlank(message="BuildingNo is a required field")
 	private String buildingNo;
+	@NotBlank(message="AreaName is a required field")
 	private String areaName;
+	@NotBlank(message="City is a required field")
 	private String city;
+	@NotBlank(message="State is a required field")
 	private String state;
+	@NotNull(message="Zip is a required field")
 	private Integer zip;
 	@OneToOne(mappedBy = "address")
 	@JsonIgnore

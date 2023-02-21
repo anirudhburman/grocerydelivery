@@ -29,25 +29,26 @@ import lombok.ToString;
 @Entity
 @Table(name = "cart_go_details")
 public class CartModel {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="cart_seq")
-	@SequenceGenerator(name="cart_seq",sequenceName="cart_seq", allocationSize=1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cart_seq")
+	@SequenceGenerator(name = "cart_seq", sequenceName = "cart_seq", allocationSize = 1)
 	private Integer cartId;
-	
+
 	// HAS - A relationship
 	// One cart can have only one Customer.
 	@OneToOne(mappedBy = "cart")
 	@JoinColumn(name = "customer_id")
 	@JsonIgnore
 	private CustomerModel customer;
-	
+
 	// HAS - A relationship
 	// One cart can have many products.
 	@OneToMany(cascade = CascadeType.ALL)
 	private List<ProductModel> products;
+
 	private Integer quantity;
-	
+
 	public CartModel(Integer cartId, List<ProductModel> products, Integer quantity) {
 		super();
 		this.cartId = cartId;
