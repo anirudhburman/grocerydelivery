@@ -35,7 +35,6 @@ public class UserModel {
 	@NotBlank(message="UserName is a required field")
 	@Column(unique = true)
 	private String userName;
-	@JsonIgnore
 	private String userType;
 	@NotBlank(message="Password is a required field")
 	private String userPassword;

@@ -1474,3 +1474,43 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2023-02-21 22:11:15,183 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
 2023-02-21 22:11:15,184 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
 2023-02-21 22:11:17,336 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 2.246 seconds (JVM running for 23593.485)
+2023-02-22 09:50:00,225 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 21932 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-22 09:50:00,238 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-22 09:50:00,239 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-22 09:50:06,915 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 7.159 seconds (JVM running for 8.546)
+2023-02-22 10:29:20,260 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 21932 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-22 10:29:20,261 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-22 10:29:20,262 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-22 10:29:22,489 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 2.359 seconds (JVM running for 2364.116)
+2023-02-22 10:42:02,484 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 21932 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-22 10:42:02,486 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-22 10:42:02,486 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-22 10:42:04,694 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 2.324 seconds (JVM running for 3126.32)
+2023-02-22 15:28:41,327 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 21932 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-22 15:28:41,328 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-22 15:28:41,328 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-22 15:28:44,472 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 3.228 seconds (JVM running for 20326.086)
+2023-02-22 15:28:46,160 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 21932 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-22 15:28:46,162 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-22 15:28:46,162 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-22 15:28:50,182 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 4.123 seconds (JVM running for 20331.796)
+2023-02-22 15:28:52,191 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 21932 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-22 15:28:52,192 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-22 15:28:52,192 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-22 15:28:54,816 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 2.881 seconds (JVM running for 20336.43)
+2023-02-22 15:28:56,494 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 21932 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-22 15:28:56,495 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-22 15:28:56,496 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-22 15:28:59,419 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 3.01 seconds (JVM running for 20341.033)
+2023-02-22 15:29:01,185 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 21932 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-22 15:29:01,186 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-22 15:29:01,187 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-22 15:29:04,241 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 3.261 seconds (JVM running for 20345.855)
+2023-02-22 15:29:05,823 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 21932 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-22 15:29:05,824 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-22 15:29:05,825 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-22 15:29:07,641 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 1.91 seconds (JVM running for 20349.255)
+2023-02-22 15:38:26,706 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: duplicate key value violates unique constraint "uk_3f74559kg7w6pu45ui1gtbhso"
+  Detail: Key (user_name)=(abinash) already exists.
+2023-02-22 15:51:14,528 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-7] ERROR: duplicate key value violates unique constraint "uk_3f74559kg7w6pu45ui1gtbhso"
+  Detail: Key (user_name)=(gayputhin) already exists.

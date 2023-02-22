@@ -1,8 +1,8 @@
+import React from "react";
+import RegisterForm from "./components/RegisterForm";
 
 function App() {
-  return (
-    <h1>Hello World</h1>
-  );
+  return <RegisterForm />;
 }
 
 export default App;
