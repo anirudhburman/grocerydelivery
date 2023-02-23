@@ -8,7 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -44,8 +45,10 @@ public class WishlistModel {
 	
 	// HAS - A relationship
 	// One wishlist can have many products.
-	@OneToMany(cascade = CascadeType.MERGE)
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(name="wishList_products", joinColumns= {@JoinColumn(name="wishListId")}, inverseJoinColumns = {@JoinColumn(name="productId")})
 	private List<ProductModel> products;
+	
 	private Integer quantity;
 	
 	public WishlistModel(Integer wishlistId, List<ProductModel> products, Integer quantity) {

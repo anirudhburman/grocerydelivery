@@ -18,6 +18,6 @@ public class ProductExceptionHandler {
 	
 	@ExceptionHandler(ProductAlreadyExistsException.class)
 	public ResponseEntity<String> handleProductAlreadyExistException() {
-		return new ResponseEntity<>("Product Already Exist", HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("Product Already Exists", HttpStatus.CONFLICT);
 	}
 }

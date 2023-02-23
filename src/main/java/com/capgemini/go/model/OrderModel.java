@@ -20,7 +20,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import lombok.ToString.Exclude;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -46,7 +45,6 @@ public class OrderModel {
 	// An order can have many products and one product can belong to many orders.
 	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.REFRESH}) // Owning side
 	@JoinTable(name="go_product_orders",joinColumns= {@JoinColumn(name="orderId")}, inverseJoinColumns = {@JoinColumn(name="productId")})
-	@Exclude
 //	@Cascade(CascadeType.SAVE_UPDATE)
 //	@JsonIgnore
 	private List<ProductModel> products;
