@@ -29,10 +29,16 @@ body {
 	background: #edf1d6;
 
 	/* Chrome 10-25, Safari 5.1-6 */
-	background: -webkit-linear-gradient(to left, #edf1d6, #9dc08b, #609966);
+	background: -webkit-linear-gradient(
+		to bottom,
+		#edf1d6,
+		#9dc08b,
+		#609966,
+		#40513b
+	);
 
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	background: linear-gradient(to left, #edf1d6, #9dc08b, #609966);
+	background: linear-gradient(to bottom, #edf1d6, #9dc08b, #609966, #40513b);
 }
 
 .card-wrapper {

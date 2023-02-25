@@ -31,10 +31,10 @@ public class UserServiceImpl implements UserService {
 			if((foundUser.get().getUserPassword().equals(user.getPassword())) && (foundUser.get().getUserType().equals("Customer"))) {
 				return foundUser.get().getCustomer();
 			} else {
-				throw new UserNotFoundException("Password Invalid");
+				throw new UserNotFoundException("Password does not match! Try again.");
 			}
 		} else {
-			throw new UserNotFoundException("UserName Invalid");
+			throw new UserNotFoundException("UserName not Found! Try again or Create a new Account");
 		}
 	}
 

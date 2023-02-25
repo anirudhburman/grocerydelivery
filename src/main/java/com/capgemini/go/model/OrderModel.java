@@ -52,7 +52,7 @@ public class OrderModel {
 //	@JsonIgnore
 	private List<ProductModel> products;
 	
-	private Long totalQuantity;
+	private Integer totalQuantity;
 	private Double totalPrice;
 	private LocalDate orderDeliveryDate;
 	private LocalDate orderDispatchDate;

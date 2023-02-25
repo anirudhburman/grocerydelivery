@@ -1,11 +1,40 @@
 import React, { useState, useEffect } from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
+import {
+	MDBCol,
+	MDBContainer,
+	MDBRow,
+	MDBTypography,
+	MDBIcon,
+	MDBBtn,
+} from "mdb-react-ui-kit";
 import CartCard from "./common/CartCard";
 import { WishApi } from "../api/wishlistApi";
 
 export default function WishList() {
 	const [prods, setProds] = useState([]);
 	let wishId = 31;
+	let mybutton;
+
+	window.onscroll = function () {
+		mybutton = document.getElementById("btn-back-to-top");
+		scrollFunction(mybutton);
+	};
+
+	function scrollFunction(mybutton) {
+		if (
+			document.body.scrollTop > 20 ||
+			document.documentElement.scrollTop > 20
+		) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	function backToTop() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
 
 	useEffect(() => {
 		// Call the API to get cart products when component mounts
@@ -36,6 +65,21 @@ export default function WishList() {
 	return (
 		<section className="h-100">
 			<MDBContainer className="py-5 h-100">
+				<MDBBtn
+					onClick={backToTop}
+					id="btn-back-to-top"
+					style={{
+						position: "fixed",
+						bottom: "20px",
+						right: "20px",
+						display: "none",
+					}}
+					className="btn-floating"
+					color="success"
+					size="lg"
+				>
+					<MDBIcon fas icon="arrow-up" />
+				</MDBBtn>
 				<MDBRow className="justify-content-center align-items-center h-100">
 					<MDBCol md="10">
 						<div className="d-flex justify-content-between align-items-center mb-4">

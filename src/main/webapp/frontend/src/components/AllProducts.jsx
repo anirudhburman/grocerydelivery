@@ -3,11 +3,9 @@ import {
 	MDBContainer,
 	MDBRow,
 	MDBCol,
-	MDBCard,
-	MDBCardBody,
-	MDBCardImage,
+	MDBInputGroup,
+	MDBInput,
 	MDBIcon,
-	MDBRipple,
 	MDBBtn,
 } from "mdb-react-ui-kit";
 import productApi from "../api/productApi";
@@ -17,6 +15,29 @@ import ProductCard from "./common/ProductCard";
 
 export default function AllProducts() {
 	const [prods, setProds] = useState([]);
+	const [searchBox, setSearchBox] = useState("");
+	let mybutton;
+
+	window.onscroll = function () {
+		mybutton = document.getElementById("btn-back-to-top");
+		scrollFunction(mybutton);
+	};
+
+	function scrollFunction(mybutton) {
+		if (
+			document.body.scrollTop > 20 ||
+			document.documentElement.scrollTop > 20
+		) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	function backToTop() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
 
 	useEffect(() => {
 		const fetch = async () => {
@@ -56,28 +77,100 @@ export default function AllProducts() {
 		fetch(pid);
 	}
 
+	function handleSearchBox(event) {
+		setSearchBox(event.target.value);
+	}
+
+	function handleSearch() {
+		const fetch = async (val) => {
+			return await productApi
+				.filterByBrand(val)
+				.then((res) => setProds(res.data))
+				.catch((err) => console.log(err.response.data));
+		};
+		fetch(searchBox);
+	}
+
+	function handleSort() {
+		const fetch = async () => {
+			return await productApi
+				.sortByPrice()
+				.then((res) => {
+					setProds(res.data);
+				})
+				.catch((err) => console.log(err.response.data));
+		};
+		fetch();
+	}
+
 	return (
-		<MDBContainer fluid>
-			<MDBRow className="justify-content-center mb-0">
-				<MDBCol md="12" xl="10">
-					{prods?.map((prod) => {
-						return (
-							<ProductCard
-								key={prod.productId}
-								id={prod.productId}
-								brand={prod.brand}
-								name={prod.productName}
-								size={prod.dimension}
-								color={prod.colour}
-								category={prod.productCategory}
-								price={prod.price}
-								addToCart={handleAddToCart}
-								addToWish={handleAddToWish}
-							/>
-						);
-					})}
-				</MDBCol>
-			</MDBRow>
-		</MDBContainer>
+		<>
+			<MDBContainer fluid>
+				<MDBBtn
+					onClick={backToTop}
+					id="btn-back-to-top"
+					style={{
+						position: "fixed",
+						bottom: "20px",
+						right: "20px",
+						display: "none",
+					}}
+					className="btn-floating"
+					color="success"
+					size="lg"
+				>
+					<MDBIcon fas icon="arrow-up" />
+				</MDBBtn>
+				<MDBRow className="justify-content-center mb-0">
+					<MDBCol md="12" xl="10">
+						<MDBRow className="mb-0 mt-3">
+							<MDBCol md="6" xl="4">
+								<MDBInputGroup>
+									<MDBInput
+										onChange={handleSearchBox}
+										name="searchBox"
+										style={{ backgroundColor: "#fcffeb" }}
+										label="Search by Brand"
+										value={searchBox}
+									/>
+									<MDBBtn
+										onClick={handleSearch}
+										style={{ backgroundColor: "#40513B" }}
+										rippleColor="dark"
+									>
+										<MDBIcon icon="search" />
+									</MDBBtn>
+								</MDBInputGroup>
+							</MDBCol>
+							<MDBCol md="6" xl="4">
+								<MDBBtn
+									onClick={handleSort}
+									style={{ backgroundColor: "#40513B" }}
+									rippleColor="dark"
+								>
+									<MDBIcon icon="fas fa-sort" /> Sort By Price
+								</MDBBtn>
+							</MDBCol>
+						</MDBRow>
+						{prods?.map((prod) => {
+							return (
+								<ProductCard
+									key={prod.productId}
+									id={prod.productId}
+									brand={prod.brand}
+									name={prod.productName}
+									size={prod.dimension}
+									color={prod.colour}
+									category={prod.productCategory}
+									price={prod.price}
+									addToCart={handleAddToCart}
+									addToWish={handleAddToWish}
+								/>
+							);
+						})}
+					</MDBCol>
+				</MDBRow>
+			</MDBContainer>
+		</>
 	);
 }

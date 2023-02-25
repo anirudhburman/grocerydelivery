@@ -10,6 +10,7 @@ import {
 	MDBRipple,
 	MDBBtn,
 } from "mdb-react-ui-kit";
+import { getRandomNumber } from "../../utils/helpers";
 
 export default function ProductCard(prod) {
 	return (
@@ -44,7 +45,7 @@ export default function ProductCard(prod) {
 								<MDBIcon fas icon="star" />
 								<MDBIcon fas icon="star" />
 							</div>
-							<span>310</span>
+							<span>{getRandomNumber()}</span>
 						</div>
 						<div className="mt-1 mb-0 text-muted small">
 							<span>{prod.size}</span>

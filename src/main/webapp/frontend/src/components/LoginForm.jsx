@@ -11,9 +11,13 @@ import {
 	MDBInput,
 } from "mdb-react-ui-kit";
 import userApi from "../api/userApi";
+import Alert from "react-bootstrap/Alert";
 import FireImg from "./assets/images/fire.jpg";
 
 export default function LoginForm() {
+	const [showErr, setShowErr] = useState(false);
+	const [showSuccess, setShowSuccess] = useState(false);
+	const [err, setErr] = useState("");
 	const [user, setUser] = useState({
 		userName: "",
 		password: "",
@@ -34,32 +38,39 @@ export default function LoginForm() {
 		console.log(user);
 		await userApi
 			.loginUser(user)
-			.then((response) => console.log(response.data))
-			.catch((error) => console.error(`Error adding user: ${error}`));
+			.then((response) => {
+				console.log(response.data);
+				setShowSuccess(true);
+			})
+			.catch((error) => {
+				setErr(error.response.data.message);
+				console.log(error);
+				console.error(`Error logging in user: ${error}`);
+				setShowErr(true);
+			});
 	}
 
 	return (
-		// <form onSubmit={handleSubmit}>
-		// 	<input
-		// 		onChange={handleChange}
-		// 		type="text"
-		// 		name="userName"
-		// 		id="userName"
-		// 		value={user.userName}
-		// 		placeholder="Enter your UserName"
-		// 	/>
-		// 	<input
-		// 		onChange={handleChange}
-		// 		type="password"
-		// 		name="password"
-		// 		id="password"
-		// 		value={user.password}
-		// 		placeholder="Enter your Password"
-		// 	/>
-		// 	<button type="submit">Login</button>
-		// </form>
-
 		<MDBContainer className="my-5">
+			{showErr && (
+				<Alert
+					variant="danger"
+					onClose={() => setShowErr(false)}
+					dismissible
+				>
+					<Alert.Heading>Oh snap! There was an error!</Alert.Heading>
+					<p>{err}</p>
+				</Alert>
+			)}
+			{showSuccess && (
+				<Alert
+					variant="success"
+					onClose={() => setShowSuccess(false)}
+					dismissible
+				>
+					<Alert.Heading>Yay! Welcome {user.userName}!</Alert.Heading>
+				</Alert>
+			)}
 			<MDBCard>
 				<MDBRow className="g-0">
 					<MDBCol md="6">

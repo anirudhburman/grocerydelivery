@@ -12,6 +12,13 @@ import {
 	MDBBreadcrumb,
 	MDBBreadcrumbItem,
 	MDBTypography,
+	MDBModal,
+	MDBModalDialog,
+	MDBModalContent,
+	MDBModalHeader,
+	MDBModalTitle,
+	MDBModalBody,
+	MDBModalFooter,
 } from "mdb-react-ui-kit";
 import { getCustomerById, deleteCustomerById } from "../api/customerApi";
 import OrderImg from "./assets/images/order.jpg";
@@ -39,10 +46,11 @@ export default function Profile() {
 		email: "",
 	});
 	let custId;
+	const [basicModal, setBasicModal] = useState(false);
+	const toggleShow = () => setBasicModal(!basicModal);
 
 	useEffect(() => {
-		// Call the API to get cart products when component mounts
-		custId = 9; /** props.match.params.id */
+		custId = 29; /** props.match.params.id */
 		const fetch = async () => {
 			await getCustomerById(custId)
 				.then((res) => {
@@ -79,24 +87,20 @@ export default function Profile() {
 
 	function goToOrders() {
 		console.log("Going to view Orders");
+		navigate("/your-orders");
 	}
 
-	function handleDelete() {
-		const result = window.confirm(
-			"Are you sure you want to delete your account? It is not recoverable once done!"
-		);
-		if (result) {
-			console.log("User clicked OK");
-			const fetch = async (id) => {
-				await deleteCustomerById(id)
-					.then((res) => alert(res.data))
-					.catch((error) => console.log(error.response.data));
-			};
-			fetch(cust.customerId);
-			// Redirect to Home from here.
-		} else {
-			console.log("User clicked Cancel");
-		}
+	function handleConfirmDelete() {
+		console.log("User clicked Confirm Delete");
+		const fetch = async (id) => {
+			await deleteCustomerById(id)
+				.then((res) => {
+					alert(res.data);
+					navigate("/login");
+				})
+				.catch((error) => console.log(error.response.data));
+		};
+		fetch(cust.customerId);
 	}
 
 	function handleEdit() {
@@ -106,6 +110,36 @@ export default function Profile() {
 
 	return (
 		<section>
+			<MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
+				<MDBModalDialog>
+					<MDBModalContent>
+						<MDBModalHeader>
+							<MDBModalTitle>CONFIRM DELETE</MDBModalTitle>
+							<MDBBtn
+								className="btn-close"
+								color="none"
+								onClick={toggleShow}
+							></MDBBtn>
+						</MDBModalHeader>
+						<MDBModalBody>
+							Are you sure you want to DELETE YOUR ACCOUNT? It is
+							not recoverable once done!
+						</MDBModalBody>
+
+						<MDBModalFooter>
+							<MDBBtn color="secondary" onClick={toggleShow}>
+								Close
+							</MDBBtn>
+							<MDBBtn
+								onClick={handleConfirmDelete}
+								color="danger"
+							>
+								Confirm Delete
+							</MDBBtn>
+						</MDBModalFooter>
+					</MDBModalContent>
+				</MDBModalDialog>
+			</MDBModal>
 			<MDBContainer className="py-5">
 				<MDBRow>
 					<MDBCol>
@@ -153,7 +187,7 @@ export default function Profile() {
 										<i className="fas fa-pen"></i> Edit
 									</MDBBtn>
 									<MDBBtn
-										onClick={handleDelete}
+										onClick={toggleShow}
 										outline
 										className="ms-1"
 										color="danger"

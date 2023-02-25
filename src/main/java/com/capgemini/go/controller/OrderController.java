@@ -21,9 +21,9 @@ public class OrderController {
 	OrderService orderSer;
 
 	// http://localhost:8080/addorder
-	@PostMapping("/addorder")
-	public OrderModel addOrder(@RequestBody OrderModel order) {
-		return orderSer.addOrder(order);
+	@PostMapping("/addorder/{cartId}/{total}")
+	public OrderModel addOrder(@PathVariable("cartId") Integer cartId, @PathVariable("total") Integer total) {
+		return orderSer.addOrder(cartId, total);
 	}
 
 	// http://localhost:8080/cancelorder

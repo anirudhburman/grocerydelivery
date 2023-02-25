@@ -9,6 +9,9 @@ import ProductPage from "./pages/ProductsPage";
 import AboutPage from "./pages/AboutPage";
 import EditProfilePage from "./pages/EditProfilePage";
 import LoginPage from "./pages/LoginPage";
+import PastOrdersPage from "./pages/PastOrdersPage";
+
+import Invoice from "./components/Invoice";
 
 function App() {
 	return (
@@ -23,6 +26,8 @@ function App() {
 				<Route path="/cart" element={<CartPage />} />
 				<Route path="/wishlist" element={<WishlistPage />} />
 				<Route path="/all-products" element={<ProductPage />} />
+				<Route path="/invoice" element={<Invoice />} />
+				<Route path="/your-orders" element={<PastOrdersPage />} />
 			</Routes>
 		</Router>
 	);

@@ -7,6 +7,7 @@ import {
 	MDBContainer,
 	MDBRow,
 	MDBTypography,
+	MDBIcon,
 } from "mdb-react-ui-kit";
 import {
 	viewCart,
@@ -14,16 +15,20 @@ import {
 	deleteProdFromCart,
 	getCartProds,
 } from "../api/cartApi";
+import { useNavigate } from "react-router-dom";
 import CartCard from "./common/CartCard";
+import { addOrder } from "../api/orderApi";
 
 export default function Cart() {
+	const navigate = useNavigate();
 	const [prods, setProds] = useState([]);
 	const totalPrice = prods.reduce((acc, curr) => acc + curr.price, 0);
-	let cartId;
+	let cartId = 31;
+	let mybutton;
 
 	useEffect(() => {
 		// Call the API to get cart products when component mounts
-		cartId = 31; /** props.match.params.id */
+		/** props.match.params.id */
 		const fetch = async () => {
 			await getCartProds(cartId)
 				.then((response) => {
@@ -32,13 +37,48 @@ export default function Cart() {
 				.catch((error) => console.log(error.response.data));
 		};
 		fetch();
-		console.log(prods);
 	}, [cartId]);
 	// , [props.match.params.id]);
 
+	window.onscroll = function () {
+		mybutton = document.getElementById("btn-back-to-top");
+		scrollFunction(mybutton);
+	};
+
+	function scrollFunction(mybutton) {
+		if (
+			document.body.scrollTop > 20 ||
+			document.documentElement.scrollTop > 20
+		) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	function backToTop() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+
+	function handlePlaceOrder() {
+		console.log("placing order");
+		const placeOrder = async (id, total) => {
+			return await addOrder(id, total)
+				.then((res) => {
+					console.log(res.data);
+					navigate("/invoice", {
+						state: { orderId: res.data.orderId, fromOrders: false },
+					});
+				})
+				.catch((err) => console.log(err.response.data));
+		};
+		placeOrder(cartId, totalPrice);
+	}
+
 	if (!prods || prods.length === 0) {
 		return (
-			<div>
+			<div style={{ height: "100vh" }}>
 				<h1>
 					CART EMPTY!! Your shopping bag seems too light. Go buy
 					something!!
@@ -50,6 +90,21 @@ export default function Cart() {
 	return (
 		<section className="h-100">
 			<MDBContainer className="py-5 h-100">
+				<MDBBtn
+					onClick={backToTop}
+					id="btn-back-to-top"
+					style={{
+						position: "fixed",
+						bottom: "20px",
+						right: "20px",
+						display: "none",
+					}}
+					className="btn-floating"
+					color="success"
+					size="lg"
+				>
+					<MDBIcon fas icon="arrow-up" />
+				</MDBBtn>
 				<MDBRow className="justify-content-center align-items-center h-100">
 					<MDBCol md="10">
 						<div className="d-flex justify-content-between align-items-center mb-4">
@@ -137,6 +192,7 @@ export default function Cart() {
 						<MDBCard style={{ backgroundColor: "#EDF1D6" }}>
 							<MDBCardBody>
 								<MDBBtn
+									onClick={handlePlaceOrder}
 									className="m-auto"
 									color="success"
 									block
