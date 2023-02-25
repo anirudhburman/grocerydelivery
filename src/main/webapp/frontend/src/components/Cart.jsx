@@ -14,7 +14,7 @@ import {
 	deleteProdFromCart,
 	getCartProds,
 } from "../api/cartApi";
-import ProductCard from "./common/ProductCard";
+import CartCard from "./common/CartCard";
 
 export default function Cart() {
 	const [prods, setProds] = useState([]);
@@ -54,6 +54,7 @@ export default function Cart() {
 					<MDBCol md="10">
 						<div className="d-flex justify-content-between align-items-center mb-4">
 							<MDBTypography
+								style={{ color: "#40513B" }}
 								tag="h3"
 								className="fw-normal mb-0 text-black"
 							>
@@ -94,7 +95,7 @@ export default function Cart() {
 							}
 
 							return (
-								<ProductCard
+								<CartCard
 									// key={prod.productId}
 									id={prod.productId}
 									name={prod.productName}
@@ -108,7 +109,10 @@ export default function Cart() {
 								/>
 							);
 						})}
-						<MDBCard className="mb-4">
+						<MDBCard
+							style={{ backgroundColor: "#EDF1D6" }}
+							className="mb-4"
+						>
 							<MDBCardBody className="p-4 d-flex flex-row">
 								{/* <MDBInput
 									label="Discound code"
@@ -130,11 +134,11 @@ export default function Cart() {
 							</MDBCardBody>
 						</MDBCard>
 
-						<MDBCard>
+						<MDBCard style={{ backgroundColor: "#EDF1D6" }}>
 							<MDBCardBody>
 								<MDBBtn
-									className="ms-3"
-									color="warning"
+									className="m-auto"
+									color="success"
 									block
 									size="lg"
 								>

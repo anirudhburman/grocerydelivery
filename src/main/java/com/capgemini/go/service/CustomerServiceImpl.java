@@ -69,8 +69,14 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public CustomerModel updateCustomer(CustomerModel cust) throws CustomerNotFoundException {
 		if(custRepo.existsById(cust.getCustomerId())) {
-			custRepo.save(cust);
-			return cust;
+			CustomerModel customer = custRepo.findById(cust.getCustomerId()).get();
+			customer.setAddress(cust.getAddress());
+			customer.setUser(cust.getUser());
+			customer.setCustomerName(cust.getCustomerName());
+			customer.setEmail(cust.getEmail());
+			customer.setMobileNo(cust.getMobileNo());
+			custRepo.save(customer);
+			return customer;
 		}
 		throw new CustomerNotFoundException();
 	}

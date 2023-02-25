@@ -1,13 +1,13 @@
 import React from "react";
+import Profile from "../components/Profile";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
-import Header from "../components/common/Header";
 
-export default function HomePage() {
+export default function ProfilePage() {
 	return (
 		<>
 			<Navbar />
-			<Header />
+			<Profile />
 			<Footer />
 		</>
 	);

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.capgemini.go.dto.LoginRequestDto;
 import com.capgemini.go.exception.UserNotFoundException;
+import com.capgemini.go.model.CustomerModel;
 import com.capgemini.go.model.UserModel;
 import com.capgemini.go.repositories.UserRepository;
 
@@ -24,16 +25,16 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public UserModel loginUser(LoginRequestDto user) throws UserNotFoundException {
+	public CustomerModel loginUser(LoginRequestDto user) throws UserNotFoundException {
 		Optional<UserModel> foundUser = userRepo.findByUserName(user.getUserName());
 		if(foundUser.isPresent()) {
 			if((foundUser.get().getUserPassword().equals(user.getPassword())) && (foundUser.get().getUserType().equals("Customer"))) {
-				return foundUser.get();
+				return foundUser.get().getCustomer();
 			} else {
-				throw new UserNotFoundException("Password");
+				throw new UserNotFoundException("Password Invalid");
 			}
 		} else {
-			throw new UserNotFoundException("User");
+			throw new UserNotFoundException("UserName Invalid");
 		}
 	}
 

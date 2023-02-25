@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
 	MDBBtn,
 	MDBInput,
@@ -12,14 +12,16 @@ import {
 } from "mdb-react-ui-kit";
 import "./assets/styles/registerForm.css";
 
-import { addCustomer } from "../api/customerApi.js";
+import { updateCustomer, getCustomerById } from "../api/customerApi.js";
 
-function RegisterForm() {
+function EditForm() {
 	const [user, setUser] = useState({
+		userId: 0,
 		userName: "",
 		userPassword: "",
 	});
 	const [address, setAddress] = useState({
+		addressId: 0,
 		buildingNo: "",
 		areaName: "",
 		city: "",
@@ -27,10 +29,44 @@ function RegisterForm() {
 		zip: 0,
 	});
 	const [cust, setCust] = useState({
+		customerId: 0,
 		customerName: "",
 		mobileNo: "",
 		email: "",
 	});
+	let custId;
+
+	useEffect(() => {
+		// Call the API to get cart products when component mounts
+		custId = 9; /** props.match.params.id */
+		const fetch = async () => {
+			await getCustomerById(custId)
+				.then((res) => {
+					console.log(res.data);
+					setCust({
+						customerId: res.data.customerId,
+						customerName: res.data.customerName,
+						mobileNo: res.data.mobileNo,
+						email: res.data.email,
+					});
+					setAddress({
+						addressId: res.data.address.addressId,
+						buildingNo: res.data.address.buildingNo,
+						areaName: res.data.address.areaName,
+						city: res.data.address.city,
+						state: res.data.address.state,
+						zip: res.data.address.zip,
+					});
+					setUser({
+						userId: res.data.user.userId,
+						userName: res.data.user.userName,
+						userPassword: res.data.user.userPassword,
+					});
+				})
+				.catch((error) => console.log(error.response.data));
+		};
+		fetch();
+	}, [custId]);
 
 	function handleCustChange(event) {
 		const { name, value } = event.target;
@@ -65,10 +101,10 @@ function RegisterForm() {
 		});
 	}
 
-	async function handleRegister(event) {
+	async function handleEdit(event) {
 		event.preventDefault();
 		console.log(cust);
-		await addCustomer(cust, address, user)
+		await updateCustomer(cust, address, user)
 			.then((response) => console.log(response.data))
 			.catch((error) => console.log(error.response.data));
 	}
@@ -83,7 +119,7 @@ function RegisterForm() {
 							tag="h3"
 							className="fw-normal mb-0 text-black"
 						>
-							Create Account
+							Edit your Profile
 						</MDBTypography>
 					</div>
 					<MDBCard
@@ -255,12 +291,12 @@ function RegisterForm() {
 										required
 									/>
 									<MDBBtn
-										onClick={handleRegister}
+										onClick={handleEdit}
 										style={{ backgroundColor: "#EDF1D6" }}
-										size="lg"
 										color="black"
+										size="lg"
 									>
-										Register
+										Update
 									</MDBBtn>
 								</MDBCol>
 							</MDBRow>
@@ -272,4 +308,4 @@ function RegisterForm() {
 	);
 }
 
-export default RegisterForm;
+export default EditForm;

@@ -1,13 +1,12 @@
 import React from "react";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
-import Header from "../components/common/Header";
 
-export default function HomePage() {
+export default function AboutPage() {
 	return (
 		<>
 			<Navbar />
-			<Header />
+			{/* <About /> */}
 			<Footer />
 		</>
 	);

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.capgemini.go.dto.LoginRequestDto;
 import com.capgemini.go.exception.UserNotFoundException;
+import com.capgemini.go.model.CustomerModel;
 import com.capgemini.go.model.UserModel;
 import com.capgemini.go.service.UserService;
 
@@ -31,7 +32,7 @@ public class UserController {
 	
 	//http://localhost:8080/loginuser
 	@PostMapping("/loginuser")
-	public UserModel loginUser(@Valid @RequestBody LoginRequestDto user) throws UserNotFoundException {
+	public CustomerModel loginUser(@Valid @RequestBody LoginRequestDto user) throws UserNotFoundException {
 		return userSer.loginUser(user);
 	}
 	

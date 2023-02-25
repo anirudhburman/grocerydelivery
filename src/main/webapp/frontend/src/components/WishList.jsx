@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
-import ProductCard from "./common/ProductCard";
+import CartCard from "./common/CartCard";
 import { WishApi } from "../api/wishlistApi";
 
 export default function WishList() {
@@ -26,7 +26,7 @@ export default function WishList() {
 	if (!prods || prods.length === 0) {
 		return (
 			<div>
-				<h1>
+				<h1 style={{ color: "#40513B" }}>
 					WISHLIST EMPTY!! You must want something right? GO CHOOSE!!
 				</h1>
 			</div>
@@ -40,6 +40,7 @@ export default function WishList() {
 					<MDBCol md="10">
 						<div className="d-flex justify-content-between align-items-center mb-4">
 							<MDBTypography
+								style={{ color: "#40513B" }}
 								tag="h3"
 								className="fw-normal mb-0 text-black"
 							>
@@ -86,7 +87,7 @@ export default function WishList() {
 							}
 
 							return (
-								<ProductCard
+								<CartCard
 									// key={prod.productId}
 									id={prod.productId}
 									name={prod.productName}

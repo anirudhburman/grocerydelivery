@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
-import Header from "../components/common/Header";
+import WishList from "../components/WishList";
 
-export default function HomePage() {
+export default function WishlistPage() {
 	return (
 		<>
 			<Navbar />
-			<Header />
+			<WishList />
 			<Footer />
 		</>
 	);

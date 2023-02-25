@@ -1,73 +1,102 @@
 import React from "react";
 import {
-	MDBBtn,
+	MDBContainer,
+	MDBRow,
+	MDBCol,
 	MDBCard,
 	MDBCardBody,
 	MDBCardImage,
-	MDBCol,
 	MDBIcon,
-	MDBRow,
-	MDBTypography,
+	MDBRipple,
+	MDBBtn,
 } from "mdb-react-ui-kit";
 
 export default function ProductCard(prod) {
 	return (
-		<MDBCard className="rounded-3 mb-4">
-			<MDBCardBody className="p-4">
-				<MDBRow className="justify-content-between align-items-center">
-					<MDBCol md="2" lg="2" xl="2">
-						<MDBCardImage
-							className="rounded-3"
-							fluid
-							src="https://www.wellplannedjourney.com/wp-content/uploads/Best-Outdoor-Products-Amazon.jpg"
-							alt="Cotton T-shirt"
-						/>
-					</MDBCol>
-					<MDBCol md="3" lg="3" xl="3">
-						<p className="lead fw-normal mb-2">
-							{/* Product Name */}
-							{prod.name}
-						</p>
-						<p>
-							<span className="text-muted">Size: </span>
-							{prod.size}
-							<br />
-							<span className="text-muted">Color: </span>
-							{prod.color}
-							<br />
-							<span className="text-muted">Category: </span>
-							{prod.category}
-						</p>
-					</MDBCol>
-					{prod.showAddButton && (
-						<MDBCol
-							md="3"
-							lg="3"
-							xl="2"
-							className="d-flex align-items-center justify-content-around"
+		<MDBCard
+			style={{ backgroundColor: "#fcffeb" }}
+			className="shadow-0 border rounded-3 mt-5 mb-3"
+		>
+			<MDBCardBody>
+				<MDBRow>
+					<MDBCol md="12" lg="3" className="mb-4 mb-lg-0">
+						<MDBRipple
+							rippleColor="dark"
+							rippleTag="div"
+							className="bg-image rounded hover-zoom hover-overlay"
 						>
+							<MDBCardImage
+								src="https://www.wellplannedjourney.com/wp-content/uploads/Best-Outdoor-Products-Amazon.jpg"
+								fluid
+								className="w-100"
+							/>
+						</MDBRipple>
+					</MDBCol>
+					<MDBCol md="6">
+						<h5>
+							{prod.brand} {prod.name}
+						</h5>
+						<div className="d-flex flex-row">
+							<div className="text-danger mb-1 me-2">
+								<MDBIcon fas icon="star" />
+								<MDBIcon fas icon="star" />
+								<MDBIcon fas icon="star" />
+								<MDBIcon fas icon="star" />
+								<MDBIcon fas icon="star" />
+							</div>
+							<span>310</span>
+						</div>
+						<div className="mt-1 mb-0 text-muted small">
+							<span>{prod.size}</span>
+							<span className="text-primary"> • </span>
+							<span>{prod.color}</span>
+							<span className="text-primary"> • </span>
+							<span>
+								{prod.category}
+								<br />
+							</span>
+						</div>
+						<div className="mb-2 text-muted small">
+							<span>Unique design</span>
+							<span className="text-primary"> • </span>
+							<span>Best Quality</span>
+							<span className="text-primary"> • </span>
+							<span>
+								Very Durable
+								<br />
+							</span>
+						</div>
+					</MDBCol>
+					<MDBCol
+						md="6"
+						lg="3"
+						className="border-sm-start-none border-start"
+					>
+						<div className="d-flex flex-row align-items-center mb-1">
+							<h4 className="mb-1 me-1">₹{prod.price}</h4>
+							<span className="text-danger">
+								<s>₹{(prod.price * 1.1).toFixed(2)}</s>
+							</span>
+						</div>
+						<h6 className="text-success">Free shipping</h6>
+						<div className="d-flex flex-column mt-4">
 							<MDBBtn
-								color="link"
-								className="px-2"
-								onClick={() => prod.add(prod)}
+								onClick={() => prod.addToCart(prod.id)}
+								color="success"
+								size="sm"
 							>
-								Add Another <MDBIcon fas icon="plus" />
+								Add to Cart
 							</MDBBtn>
-						</MDBCol>
-					)}
-					<MDBCol md="3" lg="2" xl="2" className="offset-lg-1">
-						<MDBTypography tag="h5" className="mb-0">
-							₹{prod.price}
-						</MDBTypography>
-					</MDBCol>
-					<MDBCol md="1" lg="1" xl="1" className="text-end">
-						<button
-							style={{ border: "none", backgroundColor: "white" }}
-							className="text-danger"
-							onClick={() => prod.delete(prod)}
-						>
-							<MDBIcon fas icon="trash text-danger" size="lg" />
-						</button>
+							<MDBBtn
+								onClick={() => prod.addToWish(prod.id)}
+								outline
+								color="success"
+								size="sm"
+								className="mt-2"
+							>
+								Add to wish list
+							</MDBBtn>
+						</div>
 					</MDBCol>
 				</MDBRow>
 			</MDBCardBody>
