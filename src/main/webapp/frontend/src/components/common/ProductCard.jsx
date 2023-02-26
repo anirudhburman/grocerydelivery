@@ -44,7 +44,7 @@ export default function ProductCard(prod) {
 								<MDBIcon fas icon="star" />
 								<MDBIcon fas icon="star" />
 							</div>
-							<span>{getRandomNumber()}</span>
+							<span>7097</span>
 						</div>
 						<div className="mt-1 mb-0 text-muted small">
 							<span>{prod.size}</span>

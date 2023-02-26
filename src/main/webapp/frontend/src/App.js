@@ -10,6 +10,9 @@ import AboutPage from "./pages/AboutPage";
 import EditProfilePage from "./pages/EditProfilePage";
 import LoginPage from "./pages/LoginPage";
 import PastOrdersPage from "./pages/PastOrdersPage";
+import AddProduct from "./pages/admin/AddProduct";
+import AllCustomers from "./pages/admin/AllCustomers";
+import AdminProducts from "./pages/admin/AdminProducts";
 
 import Invoice from "./components/Invoice";
 
@@ -28,6 +31,10 @@ function App() {
 				<Route path="/all-products" element={<ProductPage />} />
 				<Route path="/invoice" element={<Invoice />} />
 				<Route path="/your-orders" element={<PastOrdersPage />} />
+
+				<Route path="/admin/add-product" element={<AddProduct />} />
+				<Route path="/admin/products" element={<AdminProducts />} />
+				<Route path="/admin/all-customers" element={<AllCustomers />} />
 			</Routes>
 		</Router>
 	);

@@ -2404,3 +2404,12 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2023-02-26 03:10:44,374 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-1] Customer added to DB
 2023-02-26 12:46:51,293 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-5] Customer added to DB
 2023-02-26 12:46:57,263 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-5] Customer added to DB
+2023-02-26 12:50:12,253 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 10448 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-26 12:50:12,262 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-26 12:50:12,263 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-26 12:50:16,393 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 4.422 seconds (JVM running for 5.267)
+2023-02-26 12:50:38,674 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-1] Customer added to DB
+2023-02-26 12:51:51,386 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-4] Customer added to DB
+2023-02-26 12:52:10,162 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-6] Customer added to DB
+2023-02-26 12:53:21,563 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-1] Customer added to DB
+2023-02-26 12:53:36,110 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-6] Customer added to DB

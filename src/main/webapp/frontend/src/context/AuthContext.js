@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
 			setCustomer(JSON.parse(storedCustomer));
 			// const cookie2 = JSON.parse(storedCustomer);
 		}
-	}, []);
+	}, [isAuth, isAdmin]);
 
 	const login = async (user) => {
 		const response = await userApi.loginUser(user);
@@ -82,8 +82,8 @@ export const AuthProvider = ({ children }) => {
 			email: "",
 			address: {},
 			user: {},
-			cart: {},
-			wishlist: {},
+			cart: { cartId: 0, products: [], quantity: 0 },
+			wishlist: { wishlistId: 0, products: [], quantity: 0 },
 			orders: [],
 		});
 		setIsAuth(false);

@@ -9,6 +9,8 @@ import {
 	MDBCardBody,
 	MDBCheckbox,
 	MDBTypography,
+	MDBValidation,
+	MDBValidationItem,
 } from "mdb-react-ui-kit";
 import "./assets/styles/registerForm.css";
 import { AuthContext } from "../context/AuthContext";
@@ -107,170 +109,181 @@ function RegisterForm() {
 									>
 										General Infomation
 									</h3>
-
-									<MDBInput
-										onChange={handleCustChange}
-										name="customerName"
-										wrapperClass="mb-4"
-										label="Full Name*"
-										size="lg"
-										id="form1"
-										type="text"
-										value={cust.customerName}
-										required
-									/>
-
-									<MDBInput
-										onChange={handleCustChange}
-										wrapperClass="mb-4"
-										name="mobileNo"
-										label="Mobile Number*"
-										size="lg"
-										id="form2"
-										type="number"
-										value={cust.mobileNo}
-										required
-									/>
-
-									<MDBInput
-										onChange={handleCustChange}
-										name="email"
-										wrapperClass="mb-4"
-										label="Email ID*"
-										size="lg"
-										id="form3"
-										type="email"
-										value={cust.email}
-										required
-									/>
-
-									<MDBInput
-										onChange={handleUserChange}
-										name="userName"
-										wrapperClass="mb-4"
-										label="Username*"
-										size="lg"
-										id="form4"
-										type="text"
-										value={user.userName}
-										required
-									/>
-
-									<MDBInput
-										onChange={handleUserChange}
-										name="userPassword"
-										wrapperClass="mb-4"
-										label="Password*"
-										size="lg"
-										id="form5"
-										type="password"
-										value={user.userPassword}
-										required
-									/>
-								</MDBCol>
-
-								<MDBCol
-									md="6"
-									className="bg-indigo p-5 text-white"
-								>
-									<h3
-										className="fw-normal mb-5 text-white"
-										style={{ color: "#4835d4" }}
-									>
-										Address Details
-									</h3>
-									<MDBRow>
-										<MDBCol md="5">
+									<MDBValidation>
+										<MDBValidationItem>
 											<MDBInput
-												style={{ color: "white" }}
-												onChange={handleAddressChange}
-												name="buildingNo"
+												onChange={handleCustChange}
+												name="customerName"
 												wrapperClass="mb-4"
-												labelClass="text-white"
-												label="Building No*"
+												label="Full Name*"
 												size="lg"
-												id="form6"
+												id="form1"
 												type="text"
-												value={address.buildingNo}
+												value={cust.customerName}
 												required
 											/>
-										</MDBCol>
+										</MDBValidationItem>
 
-										<MDBCol md="7">
-											<MDBInput
-												style={{ color: "white" }}
-												onChange={handleAddressChange}
-												name="zip"
-												wrapperClass="mb-4"
-												labelClass="text-white"
-												label="Zip Code*"
-												size="lg"
-												id="form7"
-												type="text"
-												value={address.zip}
-												required
-											/>
-										</MDBCol>
-									</MDBRow>
+										<MDBInput
+											onChange={handleCustChange}
+											wrapperClass="mb-4"
+											name="mobileNo"
+											label="Mobile Number*"
+											size="lg"
+											id="form2"
+											type="number"
+											value={cust.mobileNo}
+											required
+										/>
 
-									<MDBInput
-										style={{ color: "white" }}
-										onChange={handleAddressChange}
-										name="areaName"
-										wrapperClass="mb-4"
-										labelClass="text-white"
-										label="Area/Locality*"
-										size="lg"
-										id="form8"
-										type="text"
-										value={address.areaName}
-										required
-									/>
+										<MDBInput
+											onChange={handleCustChange}
+											name="email"
+											wrapperClass="mb-4"
+											label="Email ID*"
+											size="lg"
+											id="form3"
+											type="email"
+											value={cust.email}
+											required
+										/>
 
-									<MDBInput
-										style={{ color: "white" }}
-										onChange={handleAddressChange}
-										name="city"
-										wrapperClass="mb-4"
-										labelClass="text-white"
-										label="City*"
-										size="lg"
-										id="form9"
-										type="text"
-										value={address.city}
-										required
-									/>
+										<MDBInput
+											onChange={handleUserChange}
+											name="userName"
+											wrapperClass="mb-4"
+											label="Username*"
+											size="lg"
+											id="form4"
+											type="text"
+											value={user.userName}
+											required
+										/>
 
-									<MDBInput
-										style={{ color: "white" }}
-										onChange={handleAddressChange}
-										name="state"
-										wrapperClass="mb-4"
-										labelClass="text-white"
-										label="State*"
-										size="lg"
-										id="form10"
-										type="text"
-										value={address.state}
-										required
-									/>
-
-									<MDBCheckbox
-										name="flexCheck"
-										id="flexCheckDefault"
-										labelClass="text-white mb-4"
-										label="I do accept the Terms and Conditions of your site."
-										required
-									/>
-									<MDBBtn
-										onClick={handleRegister}
-										style={{ backgroundColor: "#EDF1D6" }}
-										size="lg"
-										color="black"
-									>
-										Register
-									</MDBBtn>
+										<MDBInput
+											onChange={handleUserChange}
+											name="userPassword"
+											wrapperClass="mb-4"
+											label="Password*"
+											size="lg"
+											id="form5"
+											type="password"
+											value={user.userPassword}
+											required
+										/>
+									</MDBValidation>
 								</MDBCol>
+
+								<MDBValidation>
+									<MDBCol
+										md="6"
+										className="bg-indigo p-5 text-white"
+									>
+										<h3
+											className="fw-normal mb-5 text-white"
+											style={{ color: "#4835d4" }}
+										>
+											Address Details
+										</h3>
+										<MDBRow>
+											<MDBCol md="5">
+												<MDBInput
+													style={{ color: "white" }}
+													onChange={
+														handleAddressChange
+													}
+													name="buildingNo"
+													wrapperClass="mb-4"
+													labelClass="text-white"
+													label="Building No*"
+													size="lg"
+													id="form6"
+													type="text"
+													value={address.buildingNo}
+													required
+												/>
+											</MDBCol>
+
+											<MDBCol md="7">
+												<MDBInput
+													style={{ color: "white" }}
+													onChange={
+														handleAddressChange
+													}
+													name="zip"
+													wrapperClass="mb-4"
+													labelClass="text-white"
+													label="Zip Code*"
+													size="lg"
+													id="form7"
+													type="text"
+													value={address.zip}
+													required
+												/>
+											</MDBCol>
+										</MDBRow>
+
+										<MDBInput
+											style={{ color: "white" }}
+											onChange={handleAddressChange}
+											name="areaName"
+											wrapperClass="mb-4"
+											labelClass="text-white"
+											label="Area/Locality*"
+											size="lg"
+											id="form8"
+											type="text"
+											value={address.areaName}
+											required
+										/>
+
+										<MDBInput
+											style={{ color: "white" }}
+											onChange={handleAddressChange}
+											name="city"
+											wrapperClass="mb-4"
+											labelClass="text-white"
+											label="City*"
+											size="lg"
+											id="form9"
+											type="text"
+											value={address.city}
+											required
+										/>
+
+										<MDBInput
+											style={{ color: "white" }}
+											onChange={handleAddressChange}
+											name="state"
+											wrapperClass="mb-4"
+											labelClass="text-white"
+											label="State*"
+											size="lg"
+											id="form10"
+											type="text"
+											value={address.state}
+											required
+										/>
+
+										<MDBCheckbox
+											name="flexCheck"
+											id="flexCheckDefault"
+											labelClass="text-white mb-4"
+											label="I do accept the Terms and Conditions of your site."
+											required
+										/>
+										<MDBBtn
+											onClick={handleRegister}
+											style={{
+												backgroundColor: "#EDF1D6",
+											}}
+											size="lg"
+											color="black"
+										>
+											Register
+										</MDBBtn>
+									</MDBCol>
+								</MDBValidation>
 							</MDBRow>
 						</MDBCardBody>
 					</MDBCard>

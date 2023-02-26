@@ -16,7 +16,8 @@ export default function Navbar() {
 	const navigate = useNavigate();
 	const { customer, isAuth, logout } = useContext(AuthContext);
 	const [showAnimated3, setShowAnimated3] = useState(false);
-	var cartLen = customer.cart.products.length;
+	const [cartLen, setCartLen] = useState(customer.cart.products.length);
+	// var cartLen = customer.cart.products.length;
 
 	return (
 		<>
@@ -79,7 +80,10 @@ export default function Navbar() {
 							aria-controls="navbarToggleExternalContent"
 							aria-expanded="false"
 							aria-label="Toggle navigation"
-							onClick={() => setShowAnimated3(!showAnimated3)}
+							onClick={() => {
+								setShowAnimated3(!showAnimated3);
+								setCartLen(customer.cart.products.length);
+							}}
 						>
 							<div
 								className={`animated-icon3 ${
