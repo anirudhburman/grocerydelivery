@@ -25,4 +25,6 @@ public interface ProductService {
 	public List<ProductModel> sortByPrice();
 	
 	public List<ProductModel> getAllProducts();
+	
+	public ProductModel getProductById(Integer id) throws ProductNotFoundException;
 }

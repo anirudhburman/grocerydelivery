@@ -88,6 +88,19 @@ export default function Cart() {
 		);
 	}
 
+	function handleDelete(p) {
+		console.log("Delete button clicked");
+		const fetch = async (cid, id) => {
+			return await deleteProdFromCart(cid, id)
+				.then((res) => {
+					console.log(res.data);
+					setProds(res.data);
+				})
+				.catch((err) => console.log(err.response.data));
+		};
+		fetch(cartId, p.id);
+	}
+
 	return (
 		<section className="h-100">
 			<MDBContainer className="py-5 h-100" style={{ minHeight: "100vh" }}>
@@ -133,21 +146,6 @@ export default function Cart() {
 								};
 								fetch(cartId, p.id);
 								window.scrollTo(0, document.body.scrollHeight);
-							}
-
-							function handleDelete(p) {
-								console.log("Delete button clicked");
-								const fetch = async (cid, id) => {
-									return await deleteProdFromCart(cid, id)
-										.then((res) => {
-											console.log(res.data);
-											setProds(res.data);
-										})
-										.catch((err) =>
-											console.log(err.response.data)
-										);
-								};
-								fetch(cartId, p.id);
 							}
 
 							return (

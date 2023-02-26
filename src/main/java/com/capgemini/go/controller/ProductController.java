@@ -40,6 +40,11 @@ public class ProductController {
 	public String deleteProductById(@PathVariable("id") Integer productId) throws ProductNotFoundException {
 		return prodSer.deleteProductById(productId);
 	}
+	
+	@GetMapping("/getproductbyid/{id}")
+	public ProductModel getProductById(@PathVariable("id") Integer id) throws ProductNotFoundException {
+		return prodSer.getProductById(id);
+	}
 
 	// http://localhost:8080/searchbyproductname
 	@GetMapping("/searchbyproductname")

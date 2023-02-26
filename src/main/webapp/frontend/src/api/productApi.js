@@ -5,6 +5,7 @@ const baseUrl = "http://localhost:8080";
 const productApi = {
 	addProduct: (product) => axios.post(`${baseUrl}/addproduct`, product),
 	updateProduct: (product) => axios.post(`${baseUrl}/updateproduct`, product),
+	getProdById: (prodId) => axios.get(`${baseUrl}/getproductbyid/${prodId}`),
 	deleteProductById: (productId) =>
 		axios.get(`${baseUrl}/deleteproductbyid/${productId}`),
 	searchByProductName: (productName) =>

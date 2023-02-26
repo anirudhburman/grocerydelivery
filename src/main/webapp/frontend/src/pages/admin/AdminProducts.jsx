@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import productApi from "../../api/productApi";
 import { ProductTableRow } from "./ProductsTable";
 import "../../components/assets/styles/prodTable.css";
-// import ProductTable from "./ProductsTable";
-
 import {
 	MDBTypography,
 	MDBTable,
 	MDBTableHead,
 	MDBTableBody,
 } from "mdb-react-ui-kit";
+import { useNavigate } from "react-router-dom";
 
 export default function AdminProducts() {
+	const navigate = useNavigate();
 	const [products, setProducts] = useState([]);
 
 	useEffect(() => {
@@ -24,6 +24,13 @@ export default function AdminProducts() {
 		fetch();
 	}, []);
 
+	function handleEdit(id) {
+		console.log(`Edit product with ID ${id}`);
+		navigate("/admin/edit-product", {
+			state: { prodId: id },
+		});
+	}
+
 	return (
 		<>
 			<div style={{ margin: "5em" }}>
@@ -32,7 +39,7 @@ export default function AdminProducts() {
 					tag="h3"
 					className="fw-normal mb-0 text-black"
 				>
-					Your Shopping Cart
+					All Products
 				</MDBTypography>
 			</div>
 			<section className="prod-table">
@@ -43,6 +50,7 @@ export default function AdminProducts() {
 							<th scope="col">Name</th>
 							<th scope="col">Brand</th>
 							<th scope="col">Category</th>
+							<th scope="col">In Stock</th>
 							<th scope="col">Dimensions</th>
 							<th scope="col">Colour</th>
 							<th scope="col">Price</th>
@@ -52,13 +60,16 @@ export default function AdminProducts() {
 					<MDBTableBody>
 						{products?.map((prod) => (
 							<ProductTableRow
+								key={prod.productId}
 								id={prod.productId}
 								name={prod.productName}
 								brand={prod.brand}
 								category={prod.productCategory}
+								quantity={prod.quantity}
 								dimensions={prod.dimension}
 								color={prod.colour}
 								price={prod.price}
+								edit={handleEdit}
 							/>
 						))}
 					</MDBTableBody>

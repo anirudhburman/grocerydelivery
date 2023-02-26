@@ -8,11 +8,16 @@ export const ProductTableRow = (props) => {
 			<td>{props.name}</td>
 			<td>{props.brand}</td>
 			<td>{props.category}</td>
+			<td>{props.quantity}</td>
 			<td>{props.dimensions}</td>
 			<td>{props.color}</td>
 			<td>{props.price}</td>
 			<td>
-				<MDBBtn color="warning" size="sm">
+				<MDBBtn
+					onClick={() => props.edit(props.id)}
+					color="warning"
+					size="sm"
+				>
 					<MDBIcon fas icon="edit" />
 				</MDBBtn>
 			</td>

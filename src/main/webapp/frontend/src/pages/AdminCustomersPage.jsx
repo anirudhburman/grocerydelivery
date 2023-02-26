@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "../components/common/Footer";
 import AdminNavbar from "./admin/AdminNavbar";
-import AdminProducts from "./admin/AdminProducts";
+import AllCustomers from "./admin/AllCustomers";
 
-export default function AdminProductTablePage() {
+export default function AdminCustomerTablePage() {
 	return (
 		<>
 			<AdminNavbar />
-			<AdminProducts />
+			<AllCustomers />
 			<Footer />
 		</>
 	);

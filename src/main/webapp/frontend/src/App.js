@@ -13,9 +13,10 @@ import PastOrdersPage from "./pages/PastOrdersPage";
 import AddProductFrom from "./pages/admin/AddProductForm";
 import AllCustomers from "./pages/admin/AllCustomers";
 import { AuthContext } from "./context/AuthContext";
-
+import EditProductForm from "./pages/admin/EditProduct";
 import Invoice from "./components/Invoice";
 import AdminProductTablePage from "./pages/AdminProductTablePage";
+import AdminCustomerTablePage from "./pages/AdminCustomersPage";
 
 function App() {
 	const { isAuth, isAdmin } = useContext(AuthContext);
@@ -75,6 +76,10 @@ function App() {
 					element={isAdmin ? <AddProductFrom /> : <LoginPage />}
 				/>
 				<Route
+					path="/admin/edit-product"
+					element={isAdmin ? <EditProductForm /> : <LoginPage />}
+				/>
+				<Route
 					path="/admin/products"
 					element={
 						isAdmin ? <AdminProductTablePage /> : <LoginPage />
@@ -82,7 +87,9 @@ function App() {
 				/>
 				<Route
 					path="/admin/all-customers"
-					element={isAdmin ? <AllCustomers /> : <LoginPage />}
+					element={
+						isAdmin ? <AdminCustomerTablePage /> : <LoginPage />
+					}
 				/>
 			</Routes>
 		</Router>

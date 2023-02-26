@@ -1,6 +1,7 @@
 package com.capgemini.go.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -84,6 +85,16 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<ProductModel> getAllProducts() {
 		return (List<ProductModel>) prodRepo.findAll();
+	}
+
+	@Override
+	public ProductModel getProductById(Integer id) throws ProductNotFoundException {
+		Optional<ProductModel> optProd = prodRepo.findById(id);
+		if(optProd.isPresent()) {
+			ProductModel prod = optProd.get();
+			return prod;
+		}
+		throw new ProductNotFoundException();
 	}
 
 }
