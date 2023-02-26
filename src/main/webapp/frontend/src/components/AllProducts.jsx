@@ -76,8 +76,6 @@ export default function AllProducts() {
 	// 	fetch();
 	// }, []);
 
-	console.log(cartId);
-
 	function handleAddToCart(pid) {
 		console.log("Adding to cart");
 		const fetch = async (id) => {

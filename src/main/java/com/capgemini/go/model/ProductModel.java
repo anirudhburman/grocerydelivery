@@ -2,11 +2,13 @@ package com.capgemini.go.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
@@ -28,10 +30,10 @@ import lombok.ToString;
 @Entity
 @Table(name = "product_go_details")
 public class ProductModel {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="product_seq")
-	@SequenceGenerator(name="product_seq",sequenceName="product_seq", allocationSize=1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "product_seq")
+	@SequenceGenerator(name = "product_seq", sequenceName = "product_seq", allocationSize = 1)
 	private Integer productId;
 	private Double price;
 	private String colour;
@@ -40,7 +42,9 @@ public class ProductModel {
 	private Integer quantity;
 	private String productCategory;
 	private String productName;
-	@ManyToMany(mappedBy = "products")
+	@ManyToMany(cascade = { CascadeType.ALL }) // Owning side
+	@JoinTable(name = "go_product_orders", joinColumns = { @JoinColumn(name = "orderId") }, inverseJoinColumns = {
+			@JoinColumn(name = "productId") })
 	@JsonIgnore
 	private List<OrderModel> orders;
 	@ManyToOne

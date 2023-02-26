@@ -52,7 +52,7 @@ export default function LoginForm() {
 	}
 
 	if (isAuth) {
-		navigate("/profile");
+		navigate("/");
 	}
 
 	return (
@@ -117,6 +117,7 @@ export default function LoginForm() {
 								value={user.userName}
 								label="Enter your UserName"
 								size="lg"
+								autoComplete="off"
 							/>
 							<MDBInput
 								wrapperClass="mb-4"
@@ -127,6 +128,7 @@ export default function LoginForm() {
 								value={user.password}
 								label="Enter your Password"
 								size="lg"
+								autoComplete="off"
 							/>
 
 							<MDBBtn

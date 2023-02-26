@@ -109,8 +109,11 @@ function RegisterForm() {
 									>
 										General Infomation
 									</h3>
-									<MDBValidation>
-										<MDBValidationItem>
+									<MDBValidation isValidated>
+										<MDBValidationItem
+											feedback="Enter your full name"
+											invalid
+										>
 											<MDBInput
 												onChange={handleCustChange}
 												name="customerName"
@@ -121,157 +124,216 @@ function RegisterForm() {
 												type="text"
 												value={cust.customerName}
 												required
+												autoComplete="off"
 											/>
 										</MDBValidationItem>
 
-										<MDBInput
-											onChange={handleCustChange}
-											wrapperClass="mb-4"
-											name="mobileNo"
-											label="Mobile Number*"
-											size="lg"
-											id="form2"
-											type="number"
-											value={cust.mobileNo}
-											required
-										/>
-
-										<MDBInput
-											onChange={handleCustChange}
-											name="email"
-											wrapperClass="mb-4"
-											label="Email ID*"
-											size="lg"
-											id="form3"
-											type="email"
-											value={cust.email}
-											required
-										/>
-
-										<MDBInput
-											onChange={handleUserChange}
-											name="userName"
-											wrapperClass="mb-4"
-											label="Username*"
-											size="lg"
-											id="form4"
-											type="text"
-											value={user.userName}
-											required
-										/>
-
-										<MDBInput
-											onChange={handleUserChange}
-											name="userPassword"
-											wrapperClass="mb-4"
-											label="Password*"
-											size="lg"
-											id="form5"
-											type="password"
-											value={user.userPassword}
-											required
-										/>
+										<MDBValidationItem
+											feedback="Please provide a valid 10 Digit number."
+											invalid
+										>
+											<MDBInput
+												onChange={handleCustChange}
+												wrapperClass="mb-4"
+												name="mobileNo"
+												label="Mobile Number*"
+												size="lg"
+												id="form2"
+												type="number"
+												value={cust.mobileNo}
+												required
+												autoComplete="off"
+											/>
+										</MDBValidationItem>
+										<MDBValidationItem
+											feedback="Please provide a valid email."
+											invalid
+										>
+											<MDBInput
+												onChange={handleCustChange}
+												name="email"
+												wrapperClass="mb-4"
+												label="Email ID*"
+												size="lg"
+												id="form3"
+												type="email"
+												value={cust.email}
+												required
+												autoComplete="off"
+											/>
+										</MDBValidationItem>
+										<MDBValidationItem
+											feedback="Please choose a username."
+											invalid
+										>
+											<MDBInput
+												onChange={handleUserChange}
+												name="userName"
+												wrapperClass="mb-4"
+												label="Username*"
+												size="lg"
+												id="form4"
+												type="text"
+												value={user.userName}
+												required
+												autoComplete="off"
+											/>
+										</MDBValidationItem>
+										<MDBValidationItem
+											feedback="Please set a strong password."
+											invalid
+										>
+											<MDBInput
+												onChange={handleUserChange}
+												name="userPassword"
+												wrapperClass="mb-4"
+												label="Password*"
+												size="lg"
+												id="form5"
+												type="password"
+												value={user.userPassword}
+												required
+												autoComplete="off"
+											/>
+										</MDBValidationItem>
 									</MDBValidation>
 								</MDBCol>
 
-								<MDBValidation>
-									<MDBCol
-										md="6"
-										className="bg-indigo p-5 text-white"
+								<MDBCol
+									md="6"
+									className="bg-indigo p-5 text-white"
+								>
+									<h3
+										className="fw-normal mb-5 text-white"
+										style={{ color: "#4835d4" }}
 									>
-										<h3
-											className="fw-normal mb-5 text-white"
-											style={{ color: "#4835d4" }}
-										>
-											Address Details
-										</h3>
+										Address Details
+									</h3>
+									<MDBValidation isValidated>
 										<MDBRow>
 											<MDBCol md="5">
-												<MDBInput
-													style={{ color: "white" }}
-													onChange={
-														handleAddressChange
-													}
-													name="buildingNo"
-													wrapperClass="mb-4"
-													labelClass="text-white"
-													label="Building No*"
-													size="lg"
-													id="form6"
-													type="text"
-													value={address.buildingNo}
-													required
-												/>
+												<MDBValidationItem
+													feedback="Please provide a building No."
+													invalid
+												>
+													<MDBInput
+														style={{
+															color: "white",
+														}}
+														onChange={
+															handleAddressChange
+														}
+														name="buildingNo"
+														wrapperClass="mb-4"
+														labelClass="text-white"
+														label="Building No*"
+														size="lg"
+														id="form6"
+														type="text"
+														value={
+															address.buildingNo
+														}
+														required
+														autoComplete="off"
+													/>
+												</MDBValidationItem>
 											</MDBCol>
 
 											<MDBCol md="7">
-												<MDBInput
-													style={{ color: "white" }}
-													onChange={
-														handleAddressChange
-													}
-													name="zip"
-													wrapperClass="mb-4"
-													labelClass="text-white"
-													label="Zip Code*"
-													size="lg"
-													id="form7"
-													type="text"
-													value={address.zip}
-													required
-												/>
+												<MDBValidationItem
+													feedback="Please provide a valid zip."
+													invalid
+												>
+													<MDBInput
+														style={{
+															color: "white",
+														}}
+														onChange={
+															handleAddressChange
+														}
+														name="zip"
+														wrapperClass="mb-4"
+														labelClass="text-white"
+														label="Zip Code*"
+														size="lg"
+														id="form7"
+														type="number"
+														value={address.zip}
+														autoComplete="off"
+													/>
+												</MDBValidationItem>
 											</MDBCol>
 										</MDBRow>
-
-										<MDBInput
-											style={{ color: "white" }}
-											onChange={handleAddressChange}
-											name="areaName"
-											wrapperClass="mb-4"
-											labelClass="text-white"
-											label="Area/Locality*"
-											size="lg"
-											id="form8"
-											type="text"
-											value={address.areaName}
-											required
-										/>
-
-										<MDBInput
-											style={{ color: "white" }}
-											onChange={handleAddressChange}
-											name="city"
-											wrapperClass="mb-4"
-											labelClass="text-white"
-											label="City*"
-											size="lg"
-											id="form9"
-											type="text"
-											value={address.city}
-											required
-										/>
-
-										<MDBInput
-											style={{ color: "white" }}
-											onChange={handleAddressChange}
-											name="state"
-											wrapperClass="mb-4"
-											labelClass="text-white"
-											label="State*"
-											size="lg"
-											id="form10"
-											type="text"
-											value={address.state}
-											required
-										/>
-
-										<MDBCheckbox
-											name="flexCheck"
-											id="flexCheckDefault"
-											labelClass="text-white mb-4"
-											label="I do accept the Terms and Conditions of your site."
-											required
-										/>
+										<MDBValidationItem
+											feedback="Please provide a valid Area."
+											invalid
+										>
+											<MDBInput
+												style={{ color: "white" }}
+												onChange={handleAddressChange}
+												name="areaName"
+												wrapperClass="mb-4"
+												labelClass="text-white"
+												label="Area/Locality*"
+												size="lg"
+												id="form8"
+												type="text"
+												value={address.areaName}
+												required
+												autoComplete="off"
+											/>
+										</MDBValidationItem>
+										<MDBValidationItem
+											feedback="Please provide a valid city."
+											invalid
+										>
+											<MDBInput
+												style={{ color: "white" }}
+												onChange={handleAddressChange}
+												name="city"
+												wrapperClass="mb-4"
+												labelClass="text-white"
+												label="City*"
+												size="lg"
+												id="form9"
+												type="text"
+												value={address.city}
+												required
+												autoComplete="off"
+											/>
+										</MDBValidationItem>
+										<MDBValidationItem
+											feedback="Please provide a valid state."
+											invalid
+										>
+											<MDBInput
+												style={{ color: "white" }}
+												onChange={handleAddressChange}
+												name="state"
+												wrapperClass="mb-4"
+												labelClass="text-white"
+												label="State*"
+												size="lg"
+												id="form10"
+												type="text"
+												value={address.state}
+												required
+												autoComplete="off"
+											/>
+										</MDBValidationItem>
+										<MDBValidationItem
+											feedback="You must agree before submitting."
+											invalid
+										>
+											<MDBCheckbox
+												name="flexCheck"
+												id="flexCheckDefault"
+												labelClass="text-white mb-4"
+												label="I do accept the Terms and Conditions of your site.*"
+												required
+											/>
+										</MDBValidationItem>
+										<br />
 										<MDBBtn
 											onClick={handleRegister}
 											style={{
@@ -279,11 +341,12 @@ function RegisterForm() {
 											}}
 											size="lg"
 											color="black"
+											type="submit"
 										>
 											Register
 										</MDBBtn>
-									</MDBCol>
-								</MDBValidation>
+									</MDBValidation>
+								</MDBCol>
 							</MDBRow>
 						</MDBCardBody>
 					</MDBCard>

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.capgemini.go.exception.ProductAlreadyExistsException;
 import com.capgemini.go.exception.ProductNotFoundException;
+import com.capgemini.go.model.OrderModel;
 import com.capgemini.go.model.ProductModel;
 import com.capgemini.go.repositories.ProductRepository;
 
@@ -35,8 +36,18 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public String deleteProductById(Integer productId) throws ProductNotFoundException {
 		if(prodRepo.existsById(productId)) {
-			prodRepo.deleteById(productId);
-			return "product deleted successfully";
+			ProductModel product = prodRepo.findById(productId).get();
+		    
+		    // Remove the product from orders
+		    for (OrderModel order : product.getOrders()) {
+		        order.getProducts().remove(product);
+		        System.out.println(order);
+		    }
+		    
+		    return ("Cannot remove product from here. Do it manually");
+		    
+		    // Remove the product
+//		    prodRepo.deleteById(productId);
 		}
 		throw new ProductNotFoundException();
 	}

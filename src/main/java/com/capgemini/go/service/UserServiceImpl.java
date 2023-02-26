@@ -20,7 +20,6 @@ public class UserServiceImpl implements UserService {
 	
 	@Override
 	public UserModel addUser(UserModel user) {
-		user.setUserType("Customer");
 		return userRepo.save(user);
 	}
 
@@ -28,7 +27,7 @@ public class UserServiceImpl implements UserService {
 	public UserModel loginUser(LoginRequestDto user) throws UserNotFoundException {
 		Optional<UserModel> foundUser = userRepo.findByUserName(user.getUserName());
 		if(foundUser.isPresent()) {
-			if((foundUser.get().getUserPassword().equals(user.getPassword())) && (foundUser.get().getUserType().equals("Customer"))) {
+			if((foundUser.get().getUserPassword().equals(user.getPassword()))) {
 				return foundUser.get();
 			} else {
 				throw new UserNotFoundException("Password does not match! Try again.");
