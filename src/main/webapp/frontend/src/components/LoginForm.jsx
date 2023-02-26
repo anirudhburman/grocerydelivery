@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
 	MDBBtn,
 	MDBContainer,
@@ -10,11 +10,14 @@ import {
 	MDBIcon,
 	MDBInput,
 } from "mdb-react-ui-kit";
-import userApi from "../api/userApi";
 import Alert from "react-bootstrap/Alert";
 import FireImg from "./assets/images/fire.jpg";
+import { AuthContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
+	const navigate = useNavigate();
+	const { login, isAuth, currentUser } = useContext(AuthContext);
 	const [showErr, setShowErr] = useState(false);
 	const [showSuccess, setShowSuccess] = useState(false);
 	const [err, setErr] = useState("");
@@ -35,9 +38,7 @@ export default function LoginForm() {
 
 	async function handleSubmit(event) {
 		event.preventDefault();
-		console.log(user);
-		await userApi
-			.loginUser(user)
+		await login(user)
 			.then((response) => {
 				console.log(response.data);
 				setShowSuccess(true);
@@ -48,6 +49,10 @@ export default function LoginForm() {
 				console.error(`Error logging in user: ${error}`);
 				setShowErr(true);
 			});
+	}
+
+	if (isAuth) {
+		navigate("/profile");
 	}
 
 	return (

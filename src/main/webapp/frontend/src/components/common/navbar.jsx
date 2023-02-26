@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
 import {
 	MDBNavbar,
 	MDBContainer,
@@ -12,7 +13,10 @@ import {
 import "../assets/styles/navbar.css";
 
 export default function Navbar() {
+	const navigate = useNavigate();
+	const { customer, isAuth, logout } = useContext(AuthContext);
 	const [showAnimated3, setShowAnimated3] = useState(false);
+	var cartLen = customer.cart.products.length;
 
 	return (
 		<>
@@ -32,25 +36,62 @@ export default function Navbar() {
 							GREAT OUTDOORS{" "}
 						</div>
 					</Link>
-					<MDBNavbarToggler
-						type="button"
-						className="third-button"
-						data-target="#navbarToggleExternalContent"
-						aria-controls="navbarToggleExternalContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-						onClick={() => setShowAnimated3(!showAnimated3)}
-					>
-						<div
-							className={`animated-icon3 ${
-								showAnimated3 && "open"
-							}`}
+					<div>
+						{isAuth ? (
+							<MDBBtn
+								rounded
+								onClick={() => {
+									logout();
+									navigate("/login");
+								}}
+								className="me-1 mb-0"
+								size="sm"
+								color="dark"
+							>
+								Logout
+							</MDBBtn>
+						) : (
+							<>
+								<MDBBtn
+									onClick={() => navigate("/login")}
+									rounded
+									className="me-1 mb-0"
+									size="sm"
+									color="dark"
+								>
+									Login
+								</MDBBtn>
+								<MDBBtn
+									onClick={() => navigate("/register")}
+									rounded
+									className="me-1 mb-0"
+									size="sm"
+									color="dark"
+								>
+									Register
+								</MDBBtn>
+							</>
+						)}
+						<MDBNavbarToggler
+							type="button"
+							className="third-button"
+							data-target="#navbarToggleExternalContent"
+							aria-controls="navbarToggleExternalContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+							onClick={() => setShowAnimated3(!showAnimated3)}
 						>
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-					</MDBNavbarToggler>
+							<div
+								className={`animated-icon3 ${
+									showAnimated3 && "open"
+								}`}
+							>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</MDBNavbarToggler>
+					</div>
 				</MDBContainer>
 			</MDBNavbar>
 
@@ -102,7 +143,7 @@ export default function Navbar() {
 					>
 						<Link className="text-white" to="/cart">
 							<MDBBadge pill color="danger">
-								!
+								{cartLen}
 							</MDBBadge>
 							<span>
 								<MDBIcon fas icon="shopping-cart">

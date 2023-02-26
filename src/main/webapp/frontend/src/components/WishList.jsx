@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import {
 	MDBCol,
 	MDBContainer,
@@ -9,10 +9,12 @@ import {
 } from "mdb-react-ui-kit";
 import CartCard from "./common/CartCard";
 import { WishApi } from "../api/wishlistApi";
+import { AuthContext } from "../context/AuthContext";
 
 export default function WishList() {
+	const { customer } = useContext(AuthContext);
 	const [prods, setProds] = useState([]);
-	let wishId = 31;
+	let wishId = customer.wishlist.wishlistId;
 	let mybutton;
 
 	window.onscroll = function () {
@@ -40,7 +42,7 @@ export default function WishList() {
 		// Call the API to get cart products when component mounts
 		/** props.match.params.id */
 		const fetch = async () => {
-			await WishApi.getAllWishProducts(31)
+			await WishApi.getAllWishProducts(wishId)
 				.then((response) => {
 					console.log(response.data);
 					setProds(response.data);
@@ -48,13 +50,12 @@ export default function WishList() {
 				.catch((error) => console.log(error.response.data));
 		};
 		fetch();
-		console.log(prods);
 	}, [wishId]);
 	// , [props.match.params.id]);
 
 	if (!prods || prods.length === 0) {
 		return (
-			<div>
+			<div style={{ height: "100vh" }}>
 				<h1 style={{ color: "#40513B" }}>
 					WISHLIST EMPTY!! You must want something right? GO CHOOSE!!
 				</h1>

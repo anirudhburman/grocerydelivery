@@ -25,11 +25,11 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public CustomerModel loginUser(LoginRequestDto user) throws UserNotFoundException {
+	public UserModel loginUser(LoginRequestDto user) throws UserNotFoundException {
 		Optional<UserModel> foundUser = userRepo.findByUserName(user.getUserName());
 		if(foundUser.isPresent()) {
 			if((foundUser.get().getUserPassword().equals(user.getPassword())) && (foundUser.get().getUserType().equals("Customer"))) {
-				return foundUser.get().getCustomer();
+				return foundUser.get();
 			} else {
 				throw new UserNotFoundException("Password does not match! Try again.");
 			}
@@ -39,13 +39,18 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public UserModel logoutUser(Integer id) throws UserNotFoundException {
-		return null;
+	public List<UserModel> getAllUsers() {
+		return (List<UserModel>) userRepo.findAll();
 	}
 
 	@Override
-	public List<UserModel> getAllUsers() {
-		return (List<UserModel>) userRepo.findAll();
+	public CustomerModel getCustomerByUserId(Integer userId) {
+		Optional<UserModel> optUser = userRepo.findById(userId);
+		if(optUser.isPresent()) {
+			UserModel user = optUser.get();
+			return user.getCustomer();
+		}
+		return null;
 	}
 
 }

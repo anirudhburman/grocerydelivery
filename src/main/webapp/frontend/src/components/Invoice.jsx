@@ -52,7 +52,7 @@ export default function Invoice() {
 				.catch((error) => console.log(error.response.data));
 		};
 		fetch(orderId);
-	}, []);
+	}, [orderId]);
 
 	// console.log(order);
 	let i = 0;

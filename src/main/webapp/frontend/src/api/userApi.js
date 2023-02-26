@@ -22,6 +22,10 @@ const userApi = {
 				console.error(`Error getting all users: ${error}`)
 			);
 	},
+
+	getCustomer(id) {
+		return axios.get(`${BASE_URL}/getcustbyuserid/${id}`, id);
+	},
 };
 
 export default userApi;

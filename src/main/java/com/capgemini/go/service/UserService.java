@@ -11,9 +11,9 @@ public interface UserService {
 	
 	public UserModel addUser(UserModel user);
 	
-	public CustomerModel loginUser(LoginRequestDto user) throws UserNotFoundException;
+	public UserModel loginUser(LoginRequestDto user) throws UserNotFoundException;
 	
-	public UserModel logoutUser(Integer id) throws UserNotFoundException ;
+	public CustomerModel getCustomerByUserId(Integer userId);
 	
 	public List<UserModel> getAllUsers();
 }

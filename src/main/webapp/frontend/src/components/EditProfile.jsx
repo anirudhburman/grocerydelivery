@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import {
 	MDBBtn,
 	MDBInput,
@@ -11,10 +11,13 @@ import {
 	MDBTypography,
 } from "mdb-react-ui-kit";
 import "./assets/styles/registerForm.css";
-
 import { updateCustomer, getCustomerById } from "../api/customerApi.js";
+import { AuthContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 function EditForm() {
+	const navigate = useNavigate();
+	const { customer, setCustomer } = useContext(AuthContext);
 	const [user, setUser] = useState({
 		userId: 0,
 		userName: "",
@@ -34,11 +37,11 @@ function EditForm() {
 		mobileNo: "",
 		email: "",
 	});
-	let custId;
+	const custId = customer.customerId;
 
 	useEffect(() => {
 		// Call the API to get cart products when component mounts
-		custId = 9; /** props.match.params.id */
+		/** props.match.params.id */
 		const fetch = async () => {
 			await getCustomerById(custId)
 				.then((res) => {
@@ -103,10 +106,10 @@ function EditForm() {
 
 	async function handleEdit(event) {
 		event.preventDefault();
-		console.log(cust);
 		await updateCustomer(cust, address, user)
-			.then((response) => console.log(response.data))
+			.then((response) => setCustomer(response.data))
 			.catch((error) => console.log(error.response.data));
+		navigate("/profile");
 	}
 
 	return (

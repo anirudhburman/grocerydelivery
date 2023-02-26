@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
 	MDBCol,
@@ -23,9 +23,11 @@ import {
 import { getCustomerById, deleteCustomerById } from "../api/customerApi";
 import OrderImg from "./assets/images/order.jpg";
 import WishImg from "./assets/images/wish.jpg";
+import { AuthContext } from "../context/AuthContext";
 
 export default function Profile() {
 	const navigate = useNavigate();
+	const { customer } = useContext(AuthContext);
 	const [user, setUser] = useState({
 		userId: 0,
 		userName: "",
@@ -45,12 +47,15 @@ export default function Profile() {
 		mobileNo: "",
 		email: "",
 	});
-	let custId;
+	const custId = customer.customerId;
 	const [basicModal, setBasicModal] = useState(false);
 	const toggleShow = () => setBasicModal(!basicModal);
+	// console.log(currentUser);
+
+	// logout();
 
 	useEffect(() => {
-		custId = 29; /** props.match.params.id */
+		/** props.match.params.id */
 		const fetch = async () => {
 			await getCustomerById(custId)
 				.then((res) => {

@@ -1,4 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, {
+	useState,
+	useEffect,
+	useContext,
+	useCallback,
+	useMemo,
+} from "react";
 import {
 	MDBContainer,
 	MDBRow,
@@ -12,10 +18,14 @@ import productApi from "../api/productApi";
 import { addProdToCart } from "../api/cartApi";
 import { WishApi } from "../api/wishlistApi";
 import ProductCard from "./common/ProductCard";
+import { AuthContext } from "../context/AuthContext";
 
 export default function AllProducts() {
+	const { customer } = useContext(AuthContext);
 	const [prods, setProds] = useState([]);
 	const [searchBox, setSearchBox] = useState("");
+	const cartId = customer.cart.cartId;
+	const wishId = customer.wishlist.wishlistId;
 	let mybutton;
 
 	window.onscroll = function () {
@@ -39,24 +49,39 @@ export default function AllProducts() {
 		document.documentElement.scrollTop = 0;
 	}
 
-	useEffect(() => {
-		const fetch = async () => {
-			await productApi
-				.getAllProducts()
-				.then((response) => {
-					setProds(response.data);
-				})
-				.catch((error) => console.log(error.response.data));
-		};
-		fetch();
+	const fetchData = useCallback(async () => {
+		try {
+			const response = await productApi.getAllProducts();
+			setProds(response.data);
+		} catch (error) {
+			console.log(error.response.data);
+		}
 	}, []);
 
-	console.log(prods);
+	useEffect(() => {
+		fetchData();
+	}, [fetchData]);
+
+	const memoizedProds = useMemo(() => prods, [prods]);
+
+	// useEffect(() => {
+	// 	const fetch = async () => {
+	// 		await productApi
+	// 			.getAllProducts()
+	// 			.then((response) => {
+	// 				setProds(() => response.data);
+	// 			})
+	// 			.catch((error) => console.log(error.response.data));
+	// 	};
+	// 	fetch();
+	// }, []);
+
+	console.log(cartId);
 
 	function handleAddToCart(pid) {
 		console.log("Adding to cart");
 		const fetch = async (id) => {
-			return await addProdToCart(31, id)
+			return await addProdToCart(cartId, id)
 				.then((res) => {
 					console.log(res.data);
 				})
@@ -68,7 +93,7 @@ export default function AllProducts() {
 	function handleAddToWish(pid) {
 		console.log("Adding to Wishlist");
 		const fetch = async (id) => {
-			return await WishApi.addProductToWishlist(31, id)
+			return await WishApi.addProductToWishlist(wishId, id)
 				.then((res) => {
 					console.log(res.data);
 				})
@@ -152,7 +177,7 @@ export default function AllProducts() {
 								</MDBBtn>
 							</MDBCol>
 						</MDBRow>
-						{prods?.map((prod) => {
+						{memoizedProds?.map((prod) => {
 							return (
 								<ProductCard
 									key={prod.productId}

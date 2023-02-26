@@ -13,7 +13,7 @@ export default function Header() {
 					backgroundSize: "cover",
 					backgroundPosition: "center",
 					position: "relative",
-					height: "75vh",
+					height: "90vh",
 				}}
 			>
 				<div

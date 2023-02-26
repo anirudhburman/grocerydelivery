@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import {
 	MDBBtn,
 	MDBCard,
@@ -10,7 +10,6 @@ import {
 	MDBIcon,
 } from "mdb-react-ui-kit";
 import {
-	viewCart,
 	addProdToCart,
 	deleteProdFromCart,
 	getCartProds,
@@ -18,12 +17,14 @@ import {
 import { useNavigate } from "react-router-dom";
 import CartCard from "./common/CartCard";
 import { addOrder } from "../api/orderApi";
+import { AuthContext } from "../context/AuthContext";
 
 export default function Cart() {
+	const { customer } = useContext(AuthContext);
 	const navigate = useNavigate();
 	const [prods, setProds] = useState([]);
 	const totalPrice = prods.reduce((acc, curr) => acc + curr.price, 0);
-	let cartId = 31;
+	let cartId = customer.cart.cartId;
 	let mybutton;
 
 	useEffect(() => {
@@ -89,7 +90,7 @@ export default function Cart() {
 
 	return (
 		<section className="h-100">
-			<MDBContainer className="py-5 h-100">
+			<MDBContainer className="py-5 h-100" style={{ minHeight: "100vh" }}>
 				<MDBBtn
 					onClick={backToTop}
 					id="btn-back-to-top"
@@ -120,8 +121,8 @@ export default function Cart() {
 						{prods?.map((prod) => {
 							function handleAddToCart(p) {
 								console.log("Add button clicked");
-								const fetch = async (id) => {
-									return await addProdToCart(31, id)
+								const fetch = async (cid, id) => {
+									return await addProdToCart(cid, id)
 										.then((res) => {
 											console.log(res.data);
 											setProds(res.data);
@@ -130,14 +131,14 @@ export default function Cart() {
 											console.log(err.response.data)
 										);
 								};
-								fetch(p.id);
+								fetch(cartId, p.id);
 								window.scrollTo(0, document.body.scrollHeight);
 							}
 
 							function handleDelete(p) {
 								console.log("Delete button clicked");
-								const fetch = async (id) => {
-									return await deleteProdFromCart(31, id)
+								const fetch = async (cid, id) => {
+									return await deleteProdFromCart(cid, id)
 										.then((res) => {
 											console.log(res.data);
 											setProds(res.data);
@@ -146,7 +147,7 @@ export default function Cart() {
 											console.log(err.response.data)
 										);
 								};
-								fetch(p.id);
+								fetch(cartId, p.id);
 							}
 
 							return (

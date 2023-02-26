@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import {
 	MDBContainer,
 	MDBCardGroup,
@@ -7,10 +7,12 @@ import {
 } from "mdb-react-ui-kit";
 import { getOrdersByCustomerId } from "../api/customerApi";
 import OrderCard from "./common/OrderCard";
+import { AuthContext } from "../context/AuthContext";
 
 export default function App() {
+	const { customer } = useContext(AuthContext);
 	const [orders, setOrders] = useState([]);
-	let custId = 42;
+	let custId = customer.customerId;
 
 	useEffect(() => {
 		const fetch = async (id) => {
@@ -19,7 +21,16 @@ export default function App() {
 				.catch((err) => console.log(err.response.data));
 		};
 		fetch(custId);
-	});
+	}, [custId]);
+
+	if (!orders || orders.length === 0) {
+		return (
+			<div style={{ height: "100vh" }}>
+				<h1 style={{ color: "#40513B" }}>No Orders!! Buy something!</h1>
+			</div>
+		);
+	}
+
 	return (
 		<MDBContainer fluid style={{ minHeight: "100vh" }}>
 			<div

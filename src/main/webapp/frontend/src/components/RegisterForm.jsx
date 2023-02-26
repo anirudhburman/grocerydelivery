@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
 	MDBBtn,
 	MDBInput,
@@ -11,10 +11,12 @@ import {
 	MDBTypography,
 } from "mdb-react-ui-kit";
 import "./assets/styles/registerForm.css";
-
-import { addCustomer } from "../api/customerApi.js";
+import { AuthContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 function RegisterForm() {
+	const navigate = useNavigate();
+	const { register, isAuth, setCustomer } = useContext(AuthContext);
 	const [user, setUser] = useState({
 		userName: "",
 		userPassword: "",
@@ -67,10 +69,16 @@ function RegisterForm() {
 
 	async function handleRegister(event) {
 		event.preventDefault();
-		console.log(cust);
-		await addCustomer(cust, address, user)
-			.then((response) => console.log(response.data))
+		await register(cust, address, user)
+			.then((response) => {
+				console.log(response.data);
+				setCustomer(response.data);
+			})
 			.catch((error) => console.log(error.response.data));
+	}
+
+	if (isAuth) {
+		navigate("/profile");
 	}
 
 	return (

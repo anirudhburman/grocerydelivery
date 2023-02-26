@@ -12,12 +12,14 @@ import { useNavigate } from "react-router-dom";
 
 export default function OrderCard(order) {
 	const navigate = useNavigate();
+
 	function viewInvoice() {
 		console.log("Viewing Cart");
 		navigate("/invoice", {
 			state: { orderId: order.id, fromOrders: true },
 		});
 	}
+
 	return (
 		<MDBCol md="4">
 			<MDBCard style={{ margin: "10px", backgroundColor: "#fdfff0" }}>
