@@ -2539,3 +2539,9 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2023-02-27 00:46:39,248 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-5] Customer added to DB
 2023-02-27 00:56:24,150 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-3] Customer added to DB
 2023-02-27 00:56:36,929 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-4] Customer added to DB
+2023-02-27 09:24:36,384 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Starting GreatoutdoorsApplication using Java 17.0.5 on LIN33001523 with PID 16328 (C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors\bin\main started by anibarma in C:\Users\ANIBARMA\eclipse-workspace\greatoutdoors)
+2023-02-27 09:24:36,396 DEBUG c.c.g.GreatoutdoorsApplication [restartedMain] Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-02-27 09:24:36,397 INFO c.c.g.GreatoutdoorsApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-27 09:24:43,159 INFO c.c.g.GreatoutdoorsApplication [restartedMain] Started GreatoutdoorsApplication in 7.649 seconds (JVM running for 8.939)
+2023-02-27 09:30:36,490 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-6] Customer added to DB
+2023-02-27 09:30:56,390 INFO c.c.g.s.CustomerServiceImpl [http-nio-8080-exec-7] Customer added to DB

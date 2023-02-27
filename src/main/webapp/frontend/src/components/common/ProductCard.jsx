@@ -9,9 +9,12 @@ import {
 	MDBRipple,
 	MDBBtn,
 } from "mdb-react-ui-kit";
+import {}
 import { getRandomNumber } from "../../utils/helpers";
 
 export default function ProductCard(prod) {
+	const defaultImg =
+		"https://www.wellplannedjourney.com/wp-content/uploads/Best-Outdoor-Products-Amazon.jpg";
 	return (
 		<MDBCard
 			style={{ backgroundColor: "#fcffeb" }}
@@ -26,7 +29,7 @@ export default function ProductCard(prod) {
 							className="bg-image rounded hover-zoom hover-overlay"
 						>
 							<MDBCardImage
-								src="https://www.wellplannedjourney.com/wp-content/uploads/Best-Outdoor-Products-Amazon.jpg"
+								src={prod.image ? prod.image : defaultImg}
 								fluid
 								className="w-100"
 							/>
