@@ -49,32 +49,32 @@ export default function AllProducts() {
 		document.documentElement.scrollTop = 0;
 	}
 
-	const fetchData = useCallback(async () => {
-		try {
-			const response = await productApi.getAllProducts();
-			setProds(response.data);
-		} catch (error) {
-			console.log(error.response.data);
-		}
-	}, []);
+	// const fetchData = useCallback(async () => {
+	// 	try {
+	// 		const response = await productApi.getAllProducts();
+	// 		setProds(response.data);
+	// 	} catch (error) {
+	// 		console.log(error.response.data);
+	// 	}
+	// }, []);
 
-	useEffect(() => {
-		fetchData();
-	}, [fetchData]);
+	// useEffect(() => {
+	// 	fetchData();
+	// }, []);
 
 	const memoizedProds = useMemo(() => prods, [prods]);
 
-	// useEffect(() => {
-	// 	const fetch = async () => {
-	// 		await productApi
-	// 			.getAllProducts()
-	// 			.then((response) => {
-	// 				setProds(() => response.data);
-	// 			})
-	// 			.catch((error) => console.log(error.response.data));
-	// 	};
-	// 	fetch();
-	// }, []);
+	useEffect(() => {
+		const fetch = async () => {
+			await productApi
+				.getAllProducts()
+				.then((response) => {
+					setProds(() => response.data);
+				})
+				.catch((error) => console.log(error.response.data));
+		};
+		fetch();
+	}, []);
 
 	function handleAddToCart(pid) {
 		console.log("Adding to cart");
@@ -180,6 +180,7 @@ export default function AllProducts() {
 								<ProductCard
 									key={prod.productId}
 									id={prod.productId}
+									image={prod.productName}
 									brand={prod.brand}
 									name={prod.productName}
 									size={prod.dimension}

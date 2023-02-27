@@ -9,7 +9,12 @@ import {
 	MDBRipple,
 	MDBBtn,
 } from "mdb-react-ui-kit";
-import {}
+import HikingBag from "../assets/images/Hiking Bag.jpg";
+import SleepingBag from "../assets/images/Sleeping Bag.jpg";
+import SteelAxe from "../assets/images/Steel Axe.jpg";
+import WaterBottle from "../assets/images/Water Bottle.jpg";
+import CampTent from "../assets/images/Camp Tent.jpg";
+import CampStove from "../assets/images/Camp Stove.jpg";
 import { getRandomNumber } from "../../utils/helpers";
 
 export default function ProductCard(prod) {
@@ -28,8 +33,14 @@ export default function ProductCard(prod) {
 							rippleTag="div"
 							className="bg-image rounded hover-zoom hover-overlay"
 						>
+							{console.log(prod.image)}
+							{console.log()}
 							<MDBCardImage
-								src={prod.image ? prod.image : defaultImg}
+								src={
+									prod.image
+										? prod.image.replace(/\s+/g, "")
+										: defaultImg
+								}
 								fluid
 								className="w-100"
 							/>

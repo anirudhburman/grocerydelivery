@@ -45,7 +45,6 @@ function EditForm() {
 		const fetch = async () => {
 			await getCustomerById(custId)
 				.then((res) => {
-					console.log(res.data);
 					setCust({
 						customerId: res.data.customerId,
 						customerName: res.data.customerName,
