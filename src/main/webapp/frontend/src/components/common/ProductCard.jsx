@@ -9,7 +9,7 @@ import {
 	MDBRipple,
 	MDBBtn,
 } from "mdb-react-ui-kit";
-import HikingBag from "../assets/images/Hiking Bag.jpg";
+import HikingBag from "../assets/images/Hiking_Bag.jpg";
 import SleepingBag from "../assets/images/Sleeping Bag.jpg";
 import SteelAxe from "../assets/images/Steel Axe.jpg";
 import WaterBottle from "../assets/images/Water Bottle.jpg";
@@ -17,7 +17,18 @@ import CampTent from "../assets/images/Camp Tent.jpg";
 import CampStove from "../assets/images/Camp Stove.jpg";
 import { getRandomNumber } from "../../utils/helpers";
 
+const productImages = {
+	HikingBag: HikingBag,
+	SleepingBag: SleepingBag,
+	SteelAxe: SteelAxe,
+	WaterBottle: WaterBottle,
+	CampTent: CampTent,
+	CampStove: CampStove,
+};
+
 export default function ProductCard(prod) {
+	const img = prod.image.replace(/\s+/g, "");
+	const prodImg = productImages[img];
 	const defaultImg =
 		"https://www.wellplannedjourney.com/wp-content/uploads/Best-Outdoor-Products-Amazon.jpg";
 	return (
@@ -33,14 +44,9 @@ export default function ProductCard(prod) {
 							rippleTag="div"
 							className="bg-image rounded hover-zoom hover-overlay"
 						>
-							{console.log(prod.image)}
-							{console.log()}
 							<MDBCardImage
-								src={
-									prod.image
-										? prod.image.replace(/\s+/g, "")
-										: defaultImg
-								}
+								// src={prod.image ? img : defaultImg}
+								src={prodImg ? prodImg : defaultImg}
 								fluid
 								className="w-100"
 							/>
@@ -58,7 +64,7 @@ export default function ProductCard(prod) {
 								<MDBIcon fas icon="star" />
 								<MDBIcon fas icon="star" />
 							</div>
-							<span>7097</span>
+							<span>9999</span>
 						</div>
 						<div className="mt-1 mb-0 text-muted small">
 							<span>{prod.size}</span>

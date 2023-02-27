@@ -19,14 +19,37 @@ import { addProdToCart } from "../api/cartApi";
 import { WishApi } from "../api/wishlistApi";
 import ProductCard from "./common/ProductCard";
 import { AuthContext } from "../context/AuthContext";
+import { getRandomNumber } from "../utils/helpers";
 
 export default function AllProducts() {
 	const { customer } = useContext(AuthContext);
 	const [prods, setProds] = useState([]);
 	const [searchBox, setSearchBox] = useState("");
+	const [isLoading, setIsLoading] = useState(true);
 	const cartId = customer.cart.cartId;
 	const wishId = customer.wishlist.wishlistId;
 	let mybutton;
+
+	// var res = productApi.getAllProducts();
+
+	// useEffect(() => {
+	// 	res.then((response) => {
+	// 		console.log(response.data);
+	// 	}).catch((error) => console.log(error.response.data));
+	// }, []);
+
+	useEffect(() => {
+		const fetch = async () => {
+			await productApi
+				.getAllProducts()
+				.then((response) => {
+					setProds(() => response.data);
+				})
+				.catch((error) => console.log(error.response.data))
+				.finally(setIsLoading(false));
+		};
+		fetch();
+	}, []);
 
 	window.onscroll = function () {
 		mybutton = document.getElementById("btn-back-to-top");
@@ -63,18 +86,6 @@ export default function AllProducts() {
 	// }, []);
 
 	const memoizedProds = useMemo(() => prods, [prods]);
-
-	useEffect(() => {
-		const fetch = async () => {
-			await productApi
-				.getAllProducts()
-				.then((response) => {
-					setProds(() => response.data);
-				})
-				.catch((error) => console.log(error.response.data));
-		};
-		fetch();
-	}, []);
 
 	function handleAddToCart(pid) {
 		console.log("Adding to cart");
@@ -175,6 +186,7 @@ export default function AllProducts() {
 								</MDBBtn>
 							</MDBCol>
 						</MDBRow>
+						{console.log("test")}
 						{memoizedProds?.map((prod) => {
 							return (
 								<ProductCard
