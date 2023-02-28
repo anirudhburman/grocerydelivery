@@ -134,7 +134,20 @@ export default function Invoice() {
 										icon="fas fa-trash-alt"
 										className="me-1"
 									/>
-									CANCEL ORDER
+									Cancel
+								</MDBBtn>
+								<MDBBtn
+									onClick={() => window.print()}
+									style={{ backgroundColor: "#40513b" }}
+									ripple="dark"
+									className="float-end text-capitalize border-0 ms-2"
+								>
+									<MDBIcon
+										fas
+										icon="print"
+										className="me-1"
+									/>
+									Print
 								</MDBBtn>
 							</MDBCol>
 						</MDBRow>

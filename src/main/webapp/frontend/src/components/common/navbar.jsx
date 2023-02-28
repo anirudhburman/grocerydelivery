@@ -113,7 +113,7 @@ export default function Navbar() {
 							Home
 						</Link>
 					</MDBBtn>
-					<MDBBtn
+					{/* <MDBBtn
 						block
 						className="border-bottom m-0"
 						style={{ backgroundColor: "#609966" }}
@@ -121,7 +121,7 @@ export default function Navbar() {
 						<Link className="text-white" to="/about">
 							About us
 						</Link>
-					</MDBBtn>
+					</MDBBtn> */}
 					<MDBBtn
 						block
 						className="border-bottom m-0"

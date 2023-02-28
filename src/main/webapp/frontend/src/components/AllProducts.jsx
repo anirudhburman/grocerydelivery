@@ -19,13 +19,11 @@ import { addProdToCart } from "../api/cartApi";
 import { WishApi } from "../api/wishlistApi";
 import ProductCard from "./common/ProductCard";
 import { AuthContext } from "../context/AuthContext";
-import { getRandomNumber } from "../utils/helpers";
 
 export default function AllProducts() {
 	const { customer } = useContext(AuthContext);
 	const [prods, setProds] = useState([]);
 	const [searchBox, setSearchBox] = useState("");
-	const [isLoading, setIsLoading] = useState(true);
 	const cartId = customer.cart.cartId;
 	const wishId = customer.wishlist.wishlistId;
 	let mybutton;
@@ -45,8 +43,7 @@ export default function AllProducts() {
 				.then((response) => {
 					setProds(() => response.data);
 				})
-				.catch((error) => console.log(error.response.data))
-				.finally(setIsLoading(false));
+				.catch((error) => console.log(error.response.data));
 		};
 		fetch();
 	}, []);
@@ -186,7 +183,6 @@ export default function AllProducts() {
 								</MDBBtn>
 							</MDBCol>
 						</MDBRow>
-						{console.log("test")}
 						{memoizedProds?.map((prod) => {
 							return (
 								<ProductCard
