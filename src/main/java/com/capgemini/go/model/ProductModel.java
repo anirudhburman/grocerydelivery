@@ -42,9 +42,7 @@ public class ProductModel {
 	private Integer quantity;
 	private String productCategory;
 	private String productName;
-	@ManyToMany(cascade = { CascadeType.ALL }) // Owning side
-	@JoinTable(name = "go_product_orders", joinColumns = { @JoinColumn(name = "orderId") }, inverseJoinColumns = {
-			@JoinColumn(name = "productId") })
+	@ManyToMany(mappedBy = "products")
 	@JsonIgnore
 	private List<OrderModel> orders;
 	@ManyToOne
